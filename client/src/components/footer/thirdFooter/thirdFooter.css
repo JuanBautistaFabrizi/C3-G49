@@ -1,0 +1,50 @@
+.thirdFooter{
+    display: flex;
+    margin: 1rem 0 1rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;
+    
+}
+
+.copyright{
+    text-align: left;
+    font-size: 1.3rem;
+    color: rgb(74, 74, 74);
+    margin-bottom: 4rem;
+    width: 87%;
+}
+
+.disclaimer{
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.33;
+    letter-spacing: -0.2px;
+    color: rgb(136, 136, 136);
+    width: 87%;
+}
+
+.footerImg{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-right: -3rem;
+    
+}
+
+.firstStamp{
+    width: 6.4rem;
+    height: 6.31rem;
+ 
+   
+}
+
+.secondStamp{
+    width: 12.5rem;
+    height: 4.16rem;
+}
+
+.thirdStamp{
+    width: 4rem;
+    height: 5.48rem;
+}
