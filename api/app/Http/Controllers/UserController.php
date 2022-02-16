@@ -15,6 +15,7 @@ class UserController extends Controller
     public function index()
     {
         $users = User::all();
+        //$users = User::orderBy('id','desc')->paginate();
         return $users;
     }
 
@@ -25,7 +26,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -36,7 +37,16 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = new User();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = $request->password;
+        $user->address = $request->address;
+        $user->phone = $request->phone;
+        $user->status = $request->status;
+        $user->role = $request->role;
+
+        return $user->save();
     }
 
     /**
@@ -47,7 +57,8 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::find($id);
+        return $user;
     }
 
     /**
@@ -58,7 +69,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+
     }
 
     /**
