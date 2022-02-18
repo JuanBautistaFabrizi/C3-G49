@@ -1,0 +1,148 @@
+.otherProducts{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: rgb(249, 249, 249);
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    width: 100%;
+
+}
+
+.otherProducts a{
+    text-decoration: none;
+}
+
+.otherProducts h2{
+    display: flex;
+    font-size: 2.2rem;
+    text-align: initial;
+    align-items: baseline;
+    line-height: 1.23;
+    margin-bottom: 1rem;
+    margin-left: 11rem;
+}
+
+.allProducts{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 6rem;
+}
+
+.otherProductCard{
+    background-color: white;
+    width: 18%;
+    margin-bottom: 3rem;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.freeShip{
+    display: flex;
+    position: relative;
+    width: 8.5rem;
+    height: 3.6rem;
+    margin: 1rem;
+    z-index: 2;
+}
+
+.otherProdudctImg{
+    display: flex; 
+    justify-content: center;    
+}
+
+.mainImgOther{
+    position: relative;
+    width: 15rem;
+    height: auto;
+    margin-top: -3rem;
+    z-index: 1;
+}
+
+.ahora24c{
+    display: flex;
+    position: relative;
+    height: 6.4rem;
+    width: auto;
+    margin: -4.5rem 0 0.5rem 1rem;
+    z-index: 5;
+}
+
+.otherTexts{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.productName{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: -0.18px;
+    padding-top: 0.5rem;
+    text-decoration: none;
+}
+
+.discountPrice{
+    
+    margin-right: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.creditOthers{
+    display: flex;
+    font-size: 1.8rem;
+    text-decoration: line-through;
+    line-height: 1.66;
+    letter-spacing: -0.26px;
+    color: rgb(136, 136, 136);    
+    margin-right: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.discounOthers{
+    font-size: 1.5rem;
+    font-weight: 400;
+    align-self: center;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.3rem;
+    background-color: rgb(217, 49, 117);
+    line-height: 1;
+    letter-spacing: -0.28px;
+    color: rgb(255, 255, 255);
+}
+
+.realPrice{
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.32px;
+    color: black;
+}
+
+.arriving{
+    color: rgb(32, 128, 65);
+    background-color: rgb(231, 248, 237);
+    line-height: 1.5;
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin: 2rem 6rem 0 6rem;
+}
+
+.takeit{
+    color: rgb(32, 128, 65);
+    background-color: rgb(231, 248, 237);
+    line-height: 1.5;
+    font-family: Arial;
+    font-size: 1.4rem;
+    margin: 1.5rem 6rem 2rem 6rem;
+    font-weight: 400;
+}

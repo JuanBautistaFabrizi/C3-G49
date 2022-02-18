@@ -25,7 +25,7 @@ export default function FirstFooter(){
                             data-prefix="fab" data-icon="instagram" 
                             className="svg-inline--fa fa-instagram fa-w-14" 
                             role="img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512">
-                            <path class="instagram" fill="#fff"  
+                            <path fill="#fff"  
                             d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 
                             114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 
                             74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 

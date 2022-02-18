@@ -1,0 +1,277 @@
+.cardHero{
+    max-width: 1280px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding-bottom:4.1rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;    
+}
+
+.leftColumn{
+    margin-right: 7.5rem;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.heroImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zoomeablePicture{
+    height: 50rem;
+    -webkit-box-align: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.mainPicture{
+    cursor: crosshair;
+    position: relative;
+    user-select: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.rightColumn{
+    padding: 0;
+    margin: 0;
+    max-width: 436px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;
+}
+
+.productBrand{
+    font-family: "Work Sans", sans-serif;
+    padding: 0.5rem 0 2rem;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    margin: 0;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+.productName{
+    font-family: "Work Sans", sans-serif;
+    padding: 0.5rem 0 2rem;
+    font-size: 2.7rem;
+    line-height: 1.18;
+    letter-spacing: -0.5px;
+    margin: 0;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+.pricesWrapped{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.creditPrice{
+    margin-right: 0.8rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 1.5rem;
+    margin-bottom: 1.5rem;
+    }
+
+.creditHero{
+    font-size: 2.4rem;
+    text-decoration: line-through;
+    line-height: 1.66;
+    letter-spacing: -0.26px;
+    color: rgb(136, 136, 136);    
+    margin-right: 0.9rem;
+    font-weight: 400;
+}
+
+.discountHero{
+    font-size: 1.6rem;
+    font-weight: 400;
+    align-self: center;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.3rem;
+    background-color: rgb(217, 49, 117);
+    line-height: 1;
+    letter-spacing: -0.28px;
+    color: rgb(255, 255, 255);
+}
+
+.cashPrice{
+    font-size: 3.4rem;
+    font-weight: 400;
+    margin-bottom: unset;
+}
+
+.payBank{
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.payBank h3{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6rem;
+    letter-spacing: -0.3px;
+    color: rgb(0, 0, 0);
+    background: rgb(244, 244, 244);
+    text-align: left;
+    padding: 1.6rem 0 1.6rem 1.5rem;
+    position: relative;
+    border-bottom: 1px solid rgb(218, 218, 218);
+    z-index: 2;
+    margin: 0rem;
+}
+
+.specialOferts{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2.1rem;
+    
+}
+
+.specialOferts img{
+    height: 3.4rem;
+    width: 5.3rem;
+    display: inline-flex;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 2px;
+    margin-top: 0.2rem;
+    max-width: 100%;
+    
+}
+
+.paymentOptions{
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+
+.paymentInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    
+}
+
+.paymentOptions p{
+    display: inline-flex;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: -0.38px;
+    color: rgb(74, 74, 74);
+    margin: 0;
+}
+
+.paymentOptions small{
+    margin-top: 0.1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.29;
+    letter-spacing: -0.5px;
+    color: rgb(136, 136, 136);
+    display: inline-flex;
+    text-align: left;
+}
+
+.buyProduct{
+    font-size: 18px;
+    fill: currentcolor;
+    font-family: "Work Sans", sans-serif;
+    margin: 2.1rem 0;
+    padding: 1.3rem 1.8rem;
+    border: 0px;
+    border-radius: 0.2rem;
+    background-color: rgb(68, 0, 153);
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.4px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.shippingHeroe{
+    display: flex;
+    flex-direction: column;
+    font-family: "Work Sans", sans-serif;
+}
+
+.sendHeroe, .withdraw{
+    border-radius: 0.2rem;
+    border: 1px solid rgb(218, 218, 218);;
+    display: flex;
+}
+
+.truckIcon, .storeIcon{
+    background-color: transparent;
+    margin: 0 1.8rem;
+}
+
+.blackText{
+    padding: 0;
+    margin: 1rem 0 0 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: -0.5px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;
+}
+
+.greenText{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.47px;
+    color: rgb(32, 128, 65);
+    margin: 0.5rem 0;
+}
+
+.blueText{
+    cursor: pointer;
+    margin: 0 0 0.9rem 0;
+    color: rgb(0, 106, 253);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;
+}
+
+.rightArrow{
+    background-color: transparent;
+}

@@ -43,7 +43,7 @@ const SecondFooter = () => {
                                 <ErrorMessage name="email" component={() => (<div className="error">{errors.email}</div>)} />                        
                             </div>
                             <button type="submit" 
-                                className="send">SUSCRIBIRME</button>
+                                className="suscribe">SUSCRIBIRME</button>
                             {formSent && <p className="success"></p>}
                         </Form>
                     )}
