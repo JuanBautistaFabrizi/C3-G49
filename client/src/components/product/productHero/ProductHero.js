@@ -5,11 +5,16 @@ import ahora12 from "../Images/ahora12.png"
 import ahora18 from "../Images/ahora18.png"
 import ahora24 from "../Images/ahora24.png"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Carrusel from "./Carrusel";
+
 export default function ProductHero(props){
     return(
         <div className="cardHero">
             <div className="leftColumn">
-                <div className="heroImage">
+                <Carrusel />
+                {/*<div className="heroImage">
                     <div className="zoomeablePicture">
                         <img className="mainPicture"
                             src={props.img} 
@@ -44,7 +49,9 @@ export default function ProductHero(props){
                             >
                         </img>
                     </div>
-                </div>
+                </div>*/}
+               
+                
             </div>
             <div className="rightColumn">
                 <div className="heroTitle">
