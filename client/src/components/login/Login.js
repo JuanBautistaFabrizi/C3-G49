@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import validation from "./validation";
 
-import './register.css'
+import './login.css'
 
-export default function Register({ submitForm }){
+export default function Login({ submitForm }){
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -33,10 +33,10 @@ export default function Register({ submitForm }){
   })
 
     return(
-      <div className="registerForm">
+      <div className="loginForm">
         <div className="appWrapper">
           <div>
-            <h2 className="registerTitle">Crea tu cuenta</h2>
+            <h2 className="loginTitle">Ingresá con tu cuenta</h2>
           </div>
           <form className="formWrapper">
             <div className="name">
@@ -74,13 +74,12 @@ export default function Register({ submitForm }){
               />
               {errors.password && <p className="error">{errors.password}</p>}
             </div>
-            <div>
-              <button className="submit" onClick={handleFormSubmit}>Registrarse</button>
+            <div className="submitButton">
+              <button className="submit" onClick={handleFormSubmit}>Ingresá</button>
             </div>
           </form>
-          <div className="registered">
-            <a href="" className="linkLog">
-              ¿Ya tenés una cuenta? Ingresá aquí
+          <div className="noRegistered">
+            <a href="" className="enter">¿No tenés una cuenta? Ingresá aquí
             </a>
           </div>
         </div>      

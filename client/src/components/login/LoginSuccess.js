@@ -1,12 +1,12 @@
 import React from "react";
 
-import './register.css';
+import './login.css';
 
 export default function LoginSuccess(){
     return(
         <div className="successContainer">
             <div className="successWrapper">
-                <h2 className="SuccessTitle">Cuenta creada!</h2>
+                <h2 className="SuccessTitle">Gracias por volver!</h2>
             </div>
         </div>
     )
