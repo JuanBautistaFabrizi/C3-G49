@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 class ProductController extends Controller
 {
     /**
@@ -13,7 +13,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+      $products=  DB::table('products')->select('*')->get();
+      return $products;
     }
 
     /**
@@ -23,7 +24,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('products.form');
     }
 
     /**
@@ -34,7 +35,33 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name'=>'required|min:3|max:50',
+            'stock'=>'required',
+            'brand' =>'required',
+            'price' =>'required',
+            'cost' =>'required',
+            'desc'=>'required',
+            'img'=>'required'
+        ]);
+        $nombre=$request->post('name');
+        $stock=$request->post('stock');
+        $marca=$request->post('brand');
+        $precio=$request->post('price');
+        $costo=$request->post('cost');
+        $descripcion=$request->post('desc');
+        $imagen=$request->post('img');
+
+        DB::table('products')->insert([
+            'name'=>$nombre,
+            'stock'=>$stock,
+            'brand'=> $marca,
+            'price'=>$precio,
+            'cost'=>$costo,
+            'desc'=>$descripcion,
+            'img'=>$imagen
+        ]);
+      // return redirect('products/create');
     }
 
     /**
