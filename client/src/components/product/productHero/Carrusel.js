@@ -6,7 +6,7 @@ import aire3 from "../Images/aire3.jpg"
 
 import './carrusel.css'
 
-export default function Carrusel (){
+export default function Carrusel (props){
     return(
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">

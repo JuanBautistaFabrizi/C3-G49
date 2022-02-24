@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Product from '../product/Product';
+import ItemCard from '../product/ItemCard';
 
+/*import '../product/otherProducts/otherProducts.css';*/
+import './productList.css'
 export default function ProductList(){
     const [products, setProducts] = useState([])
 
@@ -13,10 +15,10 @@ export default function ProductList(){
 
     return (
         <>
-            <div className="col ">
+            <div className="listContainer">
             {
                 products.map((prod) => (
-                    <Item data={prod} key= {prod.id} />
+                    <ItemCard props={prod} key= {prod.id} />
                 ))
             }
             </div>

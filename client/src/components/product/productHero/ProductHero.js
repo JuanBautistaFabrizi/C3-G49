@@ -19,7 +19,7 @@ export default function ProductHero(props){
             <div className="rightColumn">
                 <div className="heroTitle">
                     <h2 className="productBrand">{props.brand}</h2>
-                    <h1 className="productNameHero">{props.name}</h1>
+                    <h1 className="productNameHero">{props.title}</h1>
                     <div className="pricesWrapped">
                         <div className="creditPrice">
                             <div><h3 className="creditHero">{props.price}</h3></div> 
