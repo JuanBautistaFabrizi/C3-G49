@@ -14,56 +14,19 @@ export default function ProductHero(props){
         <div className="cardHero">
             <div className="leftColumn">
                 <Carrusel />
-                {/*<div className="heroImage">
-                    <div className="zoomeablePicture">
-                        <img className="mainPicture"
-                            src={props.img} 
-                            alt={props.productName}
-                            title={props.productName}
-                            >
-                        </img>
-                    </div>
-                    <div className="morePictures">
-                        <img className="optionalPicture"
-                            src={props.img} 
-                            alt={props.productName}
-                            title={props.productName}
-                            >
-                        </img>
-                        <img className="optionalPicture"
-                            src={props.img} 
-                            alt={props.productName}
-                            title={props.productName}
-                            >
-                        </img>
-                        <img className="optionalPicture"
-                            src={props.img} 
-                            alt={props.productName}
-                            title={props.productName}
-                            >
-                        </img>
-                        <img className="optionalPicture"
-                            src={props.img} 
-                            alt={props.productName}
-                            title={props.productName}
-                            >
-                        </img>
-                    </div>
-                </div>*/}
                
-                
             </div>
             <div className="rightColumn">
                 <div className="heroTitle">
-                    <h2 className="productBrand">{props.productBrand}</h2>
-                    <h1 className="productName">{props.productName}</h1>
+                    <h2 className="productBrand">{props.brand}</h2>
+                    <h1 className="productNameHero">{props.name}</h1>
                     <div className="pricesWrapped">
                         <div className="creditPrice">
-                            <div><h3 className="creditHero">{}</h3></div> 
+                            <div><h3 className="creditHero">{props.price}</h3></div> 
                             <div><span className="discountHero">24% OFF</span></div>
                             
                         </div>
-                        <h3 className="cashPrice">{}</h3>
+                        <h3 className="cashPrice">$ 40.000</h3>
                     </div>
                 </div>
                 <div className="payBank">
@@ -108,7 +71,9 @@ export default function ProductHero(props){
                       
                     </div>
                 </div>
-                <button className="buyProduct">COMPRAR</button>
+                <div className="buyButton">
+                    <button className="buyProduct">COMPRAR</button>
+                </div>
                 <div className="shippingHeroe">
                     <div className="sendHeroe">
                         <svg className="truckIcon" aria-hidden="true" focusable="false" 

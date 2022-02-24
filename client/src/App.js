@@ -4,18 +4,22 @@ import Product from "../src/components/product/Product";
 import Form from './components/register/Form';
 import Login from './components/login/Login';
 
-import { Routes, Route, Link } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
+import { Router, Routes, Route, Switch, Link } from "react-router-dom";
 
 
 function App() {
   return (
-    <div className="App">
-        <Form />
-        <Login />
-        <Product />
-        <Footer />
-    </div>
+   
+      <div className="App">
+        <Routes>
+          <Route path="register" element={<Form />} />            
+          <Route path="login" element={<Login />} />
+          <Route path='producto' element={<Product />} />
+        </Routes>
+
+          <Footer />
+      </div>
+ 
   );
 }
 

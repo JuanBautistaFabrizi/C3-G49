@@ -1,9 +1,9 @@
 .productView{
-    display: block;
-    justify-content: center;
-    box-sizing: content-box;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Work Sans", sans-serif;    
-    
+        display: block;
+        justify-content: center;
+        box-sizing: content-box;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;    
+        
 }

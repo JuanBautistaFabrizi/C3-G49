@@ -39,17 +39,7 @@ export default function Login({ submitForm }){
             <h2 className="loginTitle">Ingresá con tu cuenta</h2>
           </div>
           <form className="formWrapper">
-            <div className="name">
-              <label className="label"></label>
-              <input className="input" 
-              placeholder="Nombre"
-              type="text" 
-              name="name" 
-              value={values.name}
-              onChange={handleChange}
-              />
-              {errors.name && <p className="error">{errors.name}</p>}
-            </div>
+            
 
             <div className="email">
               <label className="label"></label>

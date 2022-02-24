@@ -1,5 +1,5 @@
 import React from "react";
-import logoFravega from "../Images/logoFravega.png"
+import logoFravega from "../Images/logoFravega.jpg"
 
 export default function FirstFooter(){
     return(
@@ -15,7 +15,7 @@ export default function FirstFooter(){
 
                         <a href="https://www.facebook.com/fravegaonline" target="_blank">
                             <svg className="facebook" aria-hidden="true" focusable="false"
-                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512">
+                            xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 448 512">
                             <path fill="#fff" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 
                             37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 
                             38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></a>
@@ -24,7 +24,7 @@ export default function FirstFooter(){
                             <svg className="insta" aria-hidden="true" focusable="false" 
                             data-prefix="fab" data-icon="instagram" 
                             className="svg-inline--fa fa-instagram fa-w-14" 
-                            role="img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 448 512">
+                            role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 448 512">
                             <path fill="#fff"  
                             d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 
                             114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 
@@ -43,7 +43,7 @@ export default function FirstFooter(){
                         <a href="https://www.youtube.com/user/fravegaonline" target="_blank">
                             <svg className="yout" aria-hidden="true" focusable="false" data-prefix="fab" 
                             data-icon="youtube" className="svg-inline--fa fa-youtube fa-w-18" 
-                            role="img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
+                            role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" 
                             viewBox="0 0 576 512"> 
                             <path className="youtube" fill="#fff" 
                             d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 
@@ -56,7 +56,7 @@ export default function FirstFooter(){
 
                         <a href="https://twitter.com/fravegaonline" target="_blank">    
                             <svg className="twitter" aria-hidden="true" focusable="false" data-prefix="fab" 
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16">
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="28" height="28">
                             <path fill="#fff" 
                             d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558
                             298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 
@@ -71,7 +71,7 @@ export default function FirstFooter(){
 
                         <a href="https://www.linkedin.com/company/fravega-saciei/" target="_blank">
                             <svg className="linkedin" aria-hidden="true" focusable="false" data-prefix="fab" 
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="16">
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28">
                                 <path fill="#fff"  
                                 d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 
                             0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 

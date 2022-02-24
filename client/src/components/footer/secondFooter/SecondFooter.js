@@ -32,7 +32,7 @@ const SecondFooter = () => {
                 
                     {( {errors} ) => (
                         <Form className="myForm">
-                            <div>
+                            <div className="emailForm">
                                 <label htmlFor="email"></label>
                                 <Field className="enterEmail"
                                     type="email"
@@ -51,7 +51,7 @@ const SecondFooter = () => {
                 </Formik>
             </div>
                
-                    <div  className="footerLists">
+                    <div  className="footerLists1">
                         <h3>Comprar en Fravega.com</h3>
                         <ol>
                             <li><a href=""></a>Servicio técnico</li>
@@ -60,7 +60,7 @@ const SecondFooter = () => {
                         </ol>
                     </div>
 
-                    <div  className="footerLists">
+                    <div  className="footerLists2">
                         <h3>Frávega Créditos</h3>
                         <ol>
                             <li><a href=""></a>Pagá Online</li>
@@ -69,7 +69,7 @@ const SecondFooter = () => {
                         </ol>
                     </div>
 
-                    <div className="footerLists">
+                    <div className="footerLists3">
                         <h3>Recomendados</h3>
                         <ol>
                             <li><a href=""></a>Smart TV</li>
@@ -79,7 +79,7 @@ const SecondFooter = () => {
                         </ol>
                     </div>
 
-                    <div  className="footerLists">
+                    <div  className="footerLists4">
                         <h3>Ayuda</h3>
                         <ol>
                             <li><a href=""></a>Centro de ayuda</li>
@@ -89,7 +89,7 @@ const SecondFooter = () => {
                         </ol>
                     </div>
 
-                    <div className="footerLists">
+                    <div className="footerLists5">
                         <h3>Beneficios</h3>
                         <ol>
                             <li><a href=""></a>Club Personal</li>
