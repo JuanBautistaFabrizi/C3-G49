@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 class ProductController extends Controller
@@ -14,7 +15,7 @@ class ProductController extends Controller
     public function index()
     {
       $products=  DB::table('products')->select('*')->get();
-      return $products;
+      return view('products.index',compact('products')) ;
     }
 
     /**
@@ -72,7 +73,9 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //
+        //$user = DB::table('users')->where('name', 'John')->first()
+        $product=DB::table('products')->where('id',$id)->first();
+        return $product;
     }
 
     /**
@@ -83,7 +86,8 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product=DB::table('products')->where('id',$id)->first();
+        return view('products.edit',compact('product'));
     }
 
     /**
@@ -95,7 +99,25 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+              $product=Product::findOrFail($id);
+              $request->validate([
+                'name'=>'required|min:3|max:50',
+                'stock'=>'required',
+                'brand' =>'required',
+                'price' =>'required',
+                'cost' =>'required',
+                'desc'=>'required',
+                'img'=>'required'
+            ]);
+              $product->name=$request->input('name');
+              $product-> stock=$request->input('stock');
+              $product->brand =$request->input('brand');
+              $product->price=$request->input('price');
+              $product-> cost =$request->input('cost');
+              $product->desc=$request->input('desc');
+              $product->img=$request->input('img');
+              $product->save();
+
     }
 
     /**
@@ -106,6 +128,6 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('products')->where('id',$id)->delete();
     }
 }

@@ -9,7 +9,7 @@ class Category extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'product_id';
+
     protected $attributes = [
         'name',
         'status',
