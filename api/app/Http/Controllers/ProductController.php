@@ -62,7 +62,7 @@ class ProductController extends Controller
             'desc'=>$descripcion,
             'img'=>$imagen
         ]);
-      // return redirect('products/create');
+
     }
 
     /**
@@ -73,7 +73,7 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        //$user = DB::table('users')->where('name', 'John')->first()
+
         $product=DB::table('products')->where('id',$id)->first();
         return $product;
     }
