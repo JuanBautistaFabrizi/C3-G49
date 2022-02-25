@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-
+use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     /**
@@ -14,8 +14,18 @@ class UserController extends Controller
      */
     public function index()
     {
+        //$users = DB::select("SELECT * FROM producto");
         $users = User::all();
         //$users = User::orderBy('id','desc')->paginate();
+        $users = DB::table("users")->select('*')
+            ->where("name")
+            ->where("email")
+            ->where("password")
+            ->where("address")
+            ->where("phone")
+            ->where("status")
+            ->where("role")
+            ->get();
         return $users;
     }
 
@@ -26,7 +36,9 @@ class UserController extends Controller
      */
     public function create()
     {
+        
 
+        
     }
 
     /**
@@ -37,16 +49,21 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, array(
+            'name' => 'required|max:255',
+            'email' => 'required|max:255',
+            'password' => 'required|max:255',
+            'address' => 'required|max:255',
+            'phone' => 'required|max:255',
+            'status' => 'required|max:255',
+            'role' => 'required|max:255'
+          ));
+
         $user = new User();
         $user->name = $request->name;
-        $user->email = $request->email;
-        $user->password = $request->password;
-        $user->address = $request->address;
-        $user->phone = $request->phone;
-        $user->status = $request->status;
-        $user->role = $request->role;
+        $user->save();
 
-        return $user->save();
+        
     }
 
     /**
@@ -69,7 +86,7 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        $user = User::find($id);
+        
 
     }
 
@@ -82,8 +99,41 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+
+        $request->validate([
+            "name" => 'required|max:45',
+            "email" => 'required|max:45',
+            "password" => 'required|max:45',
+            "address" => 'required|max:45',
+            "phone" => 'required|max:45',
+            "status" => 'required|max:45',
+            "role" => 'required|max:45'
+        ]);
+
+        $name = $request->post('name');
+        $email = $request->post('email');
+        $password = $request->post('password');
+        $address = $request->post('address');
+        $phone = $request->post('phone');
+        $status = $request->post('status');
+        $role = $request->post('role');
+
+        DB::table('users')->where('idCliente',$id)->update([
+            "name" => $name,
+            "email" => $email,
+            "password" => $password,
+            "address" => $address,
+            "phone" => $phone,
+            "status" => $status,
+            "role" => $role
+
+         ]);
+
+         return  $user->save();
     }
+
+
 
     /**
      * Remove the specified resource from storage.
@@ -93,6 +143,10 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        if($user-> status == true){
+            $user->update(['status' => true]);
+        }
+        return $user;
     }
 }
