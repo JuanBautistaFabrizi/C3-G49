@@ -145,8 +145,9 @@ class UserController extends Controller
     {
         $user = User::find($id);
         if($user-> status == true){
-            $user->update(['status' => true]);
+            $user->update(['status' => false]);
         }
         return $user;
     }
 }
+
