@@ -50,21 +50,33 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, array(
-            'name' => 'required|max:255',
-            'email' => 'required|max:255',
-            'password' => 'required|max:255',
-            'address' => 'required|max:255',
-            'phone' => 'required|max:255',
-            'status' => 'required|max:255',
-            'role' => 'required|max:255'
+            'name' => 'required',
+            'email' => 'required',
+            'password' => 'required',
+            'address' => 'required',
+            'phone' => 'required',
+            'status' => 'required',
+            'role' => 'required'
           ));
 
-        $user = new User();
-        $user->name = $request->name;
-        $user->save();
+        $name=$request->post('name');
+        $email=$request->post('email');
+        $password=$request->post('password');
+        $address=$request->post('address');
+        $phone=$request->post('phone');
+        $status=$request->post('status');
+        $role=$request->post('role');
 
-        
-    }
+        DB::table('users')->insert([
+            'name'=>$name,
+            'email'=>$email,
+            'password'=> $password,
+            'address'=>$address,
+            'phone'=>$phone,
+            'status'=>$status,
+            'role'=>$role
+        ]);
+     }
 
     /**
      * Display the specified resource.
@@ -74,7 +86,8 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user = User::find($id);
+        
+        $user=DB::table('user')->where('id',$id)->first();
         return $user;
     }
 
@@ -102,13 +115,13 @@ class UserController extends Controller
         $user = User::find($id);
 
         $request->validate([
-            "name" => 'required|max:45',
-            "email" => 'required|max:45',
-            "password" => 'required|max:45',
-            "address" => 'required|max:45',
-            "phone" => 'required|max:45',
-            "status" => 'required|max:45',
-            "role" => 'required|max:45'
+            "name" => 'required',
+            "email" => 'required',
+            "password" => 'required',
+            "address" => 'required',
+            "phone" => 'required',
+            "status" => 'required',
+            "role" => 'required'
         ]);
 
         $name = $request->post('name');
@@ -145,8 +158,11 @@ class UserController extends Controller
     {
         $user = User::find($id);
         if($user-> status == true){
-            $user->update(['status' => false]);
+            DB::table('users')->where('idCliente',$id)->update([
+                'status' => false
+            ]);
         }
+
         return $user;
     }
 }
