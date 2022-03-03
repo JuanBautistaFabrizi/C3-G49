@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ItemCard from "../ItemCard";
+import ItemCard from "./ItemCard";
 
 import './otherProducts.css'
 
@@ -27,4 +27,13 @@ import './otherProducts.css'
 
     )
 }
-
+/*
+<div className="allProducts">
+            {
+                products.map((prod) => (
+                    <ItemCard props={prod} key= {prod.id} />
+                ))
+            }
+               
+            </div>
+            */

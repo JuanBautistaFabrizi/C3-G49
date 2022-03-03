@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import ItemCard from '../product/ItemCard';
+import ItemsCard from './ItemsCard';
 
-/*import '../product/otherProducts/otherProducts.css';*/
+import FilterColumn from './FilterColumn';
+
 import './productList.css'
 export default function ProductList(){
     const [products, setProducts] = useState([])
@@ -14,14 +15,18 @@ export default function ProductList(){
 
 
     return (
-        <>
+        <div className='productListSection'>
+
+            <FilterColumn />
             <div className="listContainer">
+    
             {
                 products.map((prod) => (
-                    <ItemCard props={prod} key= {prod.id} />
+                    <ItemsCard props={prod} key= {prod.id} />
                 ))
             }
+            
             </div>
-        </>
+        </div>
     )
 }

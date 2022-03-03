@@ -1,0 +1,103 @@
+/**** - de 640px****/
+
+@media (max-width: 640px) {
+    .buyButton{
+        display: flex;
+        justify-content: center;
+    }
+   
+    .buyProduct{
+        font-size: 18px;
+        font-family: "Work Sans", sans-serif;
+        padding: 1.5rem 1.8rem;
+        border: 1.8rem white solid;
+        border-radius: 0.3rem;
+        background-color: rgb(68, 0, 153);
+        color: white;
+        cursor: pointer;
+        width: 100%;
+        letter-spacing: -0.4px;
+        text-align: center;
+        font-weight: 600;
+        line-height: 1;
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        box-shadow: rgb(132 132 132 / 41%) 0px -1px;
+
+    }
+}
+
+
+/***************
++ de 640********/
+
+@media (min-width: 640px){
+    .buyProduct{
+        font-size: 1.8rem;
+        fill: currentcolor;
+        font-family: "Work Sans", sans-serif;
+        margin: 2.1rem 0;
+        padding: 1.3rem 1.8rem;
+        border: 0px;
+        border-radius: 0.2rem;
+        background-color: rgb(68, 0, 153);
+        color: white;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: -0.4px;
+        text-align: center;
+        font-weight: 600;
+        line-height: 1;
+        position: relative;
+ 
+    }
+}
+
+/*************
++ de 768******/
+
+@media (min-width: 768px){
+    .buyProduct{
+        display: flex;
+        font-size: 1.8rem;
+        fill: currentcolor;
+        margin: 2.1rem 0;
+        padding: 1.3rem 1.8rem;
+        border: 0px;
+        width: 28rem;
+        max-width: 28rem;
+        position: relative;
+    }
+}
+
+/*************
++ de 840******/
+
+@media (min-width: 840px){
+    .buyProduct{
+        width: 32rem;
+        max-width: 32rem;
+    }
+}
+
+/*************
++ de 1024******/
+
+@media (min-width: 1024px){
+    .buyProduct{
+        width: 38rem;
+        max-width: 38rem;
+    }
+}
+
+/*************
++ de 1200******/
+
+@media (min-width: 1200px){
+    .buyProduct{
+        width: 43.6rem;
+        max-width: 43.6rem;
+    }
+}

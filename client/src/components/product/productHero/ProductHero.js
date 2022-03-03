@@ -8,6 +8,9 @@ import ahora24 from "../Images/ahora24.png"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Carrusel from "./Carrusel";
+import BuyButton from "./BuyButton";
+
+import './buyButton.css';
 
 export default function ProductHero(props){
     return(
@@ -18,11 +21,11 @@ export default function ProductHero(props){
             </div>
             <div className="rightColumn">
                 <div className="heroTitle">
-                    <h2 className="productBrand">{props.brand}</h2>
-                    <h1 className="productNameHero">{props.title}</h1>
+                    <h2 className="productBrand">Philips</h2>
+                    <h1 className="productNameHero">Televisor XXX LED</h1>
                     <div className="pricesWrapped">
                         <div className="creditPrice">
-                            <div><h3 className="creditHero">{props.price}</h3></div> 
+                            <div><h3 className="creditHero">$ 50.499</h3></div> 
                             <div><span className="discountHero">24% OFF</span></div>
                             
                         </div>
@@ -71,8 +74,8 @@ export default function ProductHero(props){
                       
                     </div>
                 </div>
-                <div className="buyButton">
-                    <button className="buyProduct">COMPRAR</button>
+                <div className="buyButtonSection">
+                    <BuyButton />
                 </div>
                 <div className="shippingHeroe">
                     <div className="sendHeroe">

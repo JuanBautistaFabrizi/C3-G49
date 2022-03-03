@@ -1,0 +1,203 @@
+.filterColumn{
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font-family: "Work Sans", sans-serif;
+    text-align: left;
+    margin: 2rem 0 1.5rem 2rem;
+}
+
+.filterTop h2{
+    display: flex;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.35px;
+    color: black;
+    justify-content: left;
+    text-align: left;
+}
+
+.filteredResults{
+    display: flex;
+    font-size: 1.6rem;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.filteredResults p{
+    margin-left: 0.5rem;
+}
+
+.sortBy{
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+select {
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    height: 3rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+ }
+
+.sortBy p{
+    font-size: 1.3rem;
+    margin-right: 0rem;
+}
+
+.sortResults{
+    width: 12rem;
+}
+
+.selectBy{
+    background-color: #F5F5F5;
+    border: none;
+}
+
+.options{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+}
+
+.filters{
+    display: flex;
+    align-items: baseline;
+}
+
+.filters h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 1.4rem;
+}
+
+.removeFilters{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: rgb(0, 106, 253);
+    letter-spacing: -0.5px;
+    cursor: pointer;
+    margin-inline-start: 17px;
+}
+
+.filters a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.filtersApplied{
+    width:max-content;
+    background-color: rgb(238, 238, 238);
+    padding: 0.5rem 0.8rem;
+
+}
+.showFilter{
+    margin: 1rem 0.8rem 0 0;
+    font-size: 1.4rem;
+    color: rgb(74, 74, 74);
+}
+
+.filtersApplied a{
+    padding: 10px 14px 10px 8px;
+    margin: -10px -14px -10px -8px;
+    border: 0px;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    height: auto;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: -0.16px;
+}
+
+.brandFilter{
+    display: flex;
+    flex-direction: column;
+}
+
+.brandFilter label{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+}
+
+.brandFilter h3{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: default;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 3.5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    }
+
+/* hide the browser's default checkbox */
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* create custom checkbox */
+.check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    background-color: #eee;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 0.3rem;
+}
+
+/* on mouse-over, add border color */
+.checkbox:hover input ~ .check {
+    border: 2px solid #2489C5;
+}
+
+/* add background color when the checkbox is checked */
+.checkbox input:checked ~ .check {
+    background-color: rgb(100, 6, 217);
+    border:none;
+}
+
+/* create the checkmark and hide when not checked */
+.check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* show the checkmark when checked */
+.checkbox input:checked ~ .check:after {
+    display: block;
+}
+
+/* checkmark style */
+.checkbox .check:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

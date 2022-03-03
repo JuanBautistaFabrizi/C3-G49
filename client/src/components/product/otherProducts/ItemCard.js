@@ -1,10 +1,9 @@
 import React from "react";
 
-import ahora24c from "./otherProducts/Images/ahora24c.png"
-import envioGratis from "./otherProducts/Images/envioGratis.png"
+import ahora24c from "./Images/ahora24c.png"
+import envioGratis from "./Images/envioGratis.png"
 
-
-import './otherProducts/otherProducts.css'
+import './otherProducts.css'
 
 const ItemCard = ({props}) =>{
     return(
@@ -38,7 +37,7 @@ const ItemCard = ({props}) =>{
                     </div>
                     <strong className="realPrice">$ 15.000</strong>
                     <p className="arriving">Llega mañana</p>
-                    <p className="takeit">Retiralo YA!</p>
+                    <p className="takeProduct">Retiralo YA!</p>
                         
                     
                 </div>

@@ -1,89 +1,400 @@
-.productDescription{
-    width: 100%;
-    position: relative;
-    margin: 0 0 1rem 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Work Sans", sans-serif;
-    align-items: center;
 
+/****- de 640px****/
+
+@media (max-width:640px){
+    .productDescription{
+        width: 100%;
+        position: relative;
+        margin: 0 0 1rem 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+    }
+
+
+    .descriptionTitles a{
+        text-decoration: none;
+    }
+
+    .productBrandB{
+        font-size: 2.5rem;
+        cursor: pointer;
+        text-align: center;
+        color: black;
+        margin: 0.5rem 0 0.5rem 2rem;
+    }
+
+    .productNameD{
+        color: black;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.27;
+        letter-spacing: -0.5px;
+        text-align: center;
+        max-width: 64rem;
+        margin: 0 0 0 3rem;
+
+    }
+
+    .productId{
+        font-size: 1.4rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.21;
+        letter-spacing: -0.2px;
+        color: rgb(102, 102, 102);
+        margin: 0.5rem 0 0rem 2rem;
+        text-align: center;
+    }
+
+    .technical{
+        max-width: 84rem;
+        margin-top: 3rem;
+        width: 100%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .technicalDescription{
+        font-size: 2.2rem;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: -0.4px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 1.3rem;
+        text-align: center;
+        margin-left: -1rem;
+    }
+
+    .descriptionFeatures{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 0rem;
+    }
+
+    .descriptionG, .features{
+        width: 95%;
+        text-align: justify;
+    }   
 }
 
-.descriptionTitles{
-    text-align: center;
+
+/****+ de 640px****/
+
+@media (min-width:640px){
+    .productDescription{
+        width: 100%;
+        position: relative;
+        margin: 0 0 1rem 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .descriptionTitles a{
+        text-decoration: none;
+    }
+
+    .productBrandB{
+        font-size: 2.5rem;
+        cursor: pointer;
+        text-align: center;
+        color: black;
+        margin: 0.5rem 0 0 3rem;
+    }
+
+    .productNameD{
+        color: black;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.27;
+        letter-spacing: -0.5px;
+        text-align: center;
+        max-width: 80rem;
+        align-self: center;
+        margin: 0 0 0 2rem;
+
+    }
+
+    .productId{
+        font-size: 1.4rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.21;
+        letter-spacing: -0.2px;
+        color: rgb(102, 102, 102);
+        text-align: center;
+        margin: 0.5rem 0 0 3rem;
+    }
+
+    .technical{
+        max-width: 84rem;
+        margin-top: 3rem;
+        width: 100%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .technicalDescription{
+        font-size: 2.2rem;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: -0.4px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 13px;
+        text-align: left;
+        margin-left: 3rem;
+    }
+
+    .descriptionFeatures{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        margin-left: 3rem;
+    }
+
+    .descriptionG, .features{
+        width: 40%;
+        text-align: justify;
+    }   
 }
 
-.descriptionTitles a{
-    text-decoration: none;
+
+/****+ de 768px****/
+
+@media (min-width:768px){
+    .productDescription{
+        width: 100%;
+        position: relative;
+        margin: 0 0 1rem 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .descriptionTitles{
+        text-align: center;
+    }
+
+    .descriptionTitles a{
+        text-decoration: none;
+    }
+
+    .productBrandB{
+        font-size: 2.5rem;
+        cursor: pointer;
+        text-align: center;
+        color: black;
+        margin: 0.5rem 0 0.5rem 3rem;
+    }
+
+    .productNameD{
+        color: black;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.27;
+        letter-spacing: -0.5px;
+        text-align: center;
+        max-width: 80rem;
+        align-self: center;
+        margin: 0 2rem 0 3rem;
+
+    }
+
+    .productId{
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.21;
+        letter-spacing: -0.2px;
+        color: rgb(102, 102, 102);
+        margin-top: 5px;
+        text-align: center;
+        margin-left: 3rem;
+    }
+
+    .technical{
+        max-width: 84rem;
+        margin-top: 3rem;
+        width: 100%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .technicalDescription{
+        font-size: 2.2rem;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: -0.4px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 13px;
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .descriptionFeatures{
+        display: flex;
+        gap: 5rem;
+        margin-left: 2.5rem;
+    }
+
+    .descriptionG, .features{
+        width: 42%;
+        text-align: justify;
+    }   
 }
 
-.productBrandB{
-    font-size: 2.5rem;
-    cursor: pointer;
-    text-align: center;
-    color: black;
-    margin: 0.5rem 0;
+
+/****+ de 840px****/
+
+@media (min-width:840px){
+    .productDescription{
+        margin: 0 0 1rem 0;
+    }
+
+    .productNameD{
+        font-size: 2.2rem;
+        max-width: 80rem;
+        align-self: center;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .technical{
+        max-width: 84rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .descriptionFeatures{
+        display: flex;
+        gap: 3.5rem;
+        margin-left: 3rem;
+    }
+
+    .descriptionG, .features{
+        width: 41%;
+        text-align: justify;
+    }   
 }
 
-.productNameD{
-    color: black;
-    font-size: 2.3rem;
-    font-weight: 600;
-    line-height: 1.27;
-    letter-spacing: -0.5px;
-    text-align: center;
-    max-width: 84.1rem;
-    align-self: center;
-    margin: 0;
-}
 
-.productId{
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.21;
-    letter-spacing: -0.2px;
-    color: rgb(102, 102, 102);
-    margin-top: 5px;
-    text-align: center;
-}
+@media (min-width:1024px){
+    .productDescription{
+        width: 100%;
+        position: relative;
+        margin: 0 0 1rem 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+        align-items: center;
 
-.technical{
-    max-width: 871px;
-    margin-top: 34px;
-    margin-bottom: unset;
-    padding: unset;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    word-break: break-word;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "Work Sans", sans-serif;
-}
+    }
 
-.technicalDescription{
-    font-size: 22px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: -0.4px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 13px;
-    text-align: left;
-}
+    .descriptionTitles{
+        text-align: center;
+    }
 
-.descriptionFeatures{
-    display: flex;
-    gap: 5rem;
-}
+    .descriptionTitles a{
+        text-decoration: none;
+    }
 
-.descriptionG, .features{
-    width: 45%;
-    text-align: justify;
+    .productBrandB{
+        font-size: 2.5rem;
+        cursor: pointer;
+        text-align: center;
+        color: black;
+        margin: 0.5rem 0 ;
+    }
+
+    .productNameD{
+        color: black;
+        font-size: 2.3rem;
+        font-weight: 600;
+        line-height: 1.27;
+        letter-spacing: -0.5px;
+        text-align: center;
+        max-width: 84.1rem;
+        align-self: center;
+        margin: 0;
+    }
+
+    .productId{
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.21;
+        letter-spacing: -0.2px;
+        color: rgb(102, 102, 102);
+        margin: 0.5rem 0 0 0;
+        text-align: center;
+    }
+
+    .technical{
+        max-width: 871px;
+        margin-top: 34px;
+        margin-bottom: unset;
+        padding: unset;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        word-break: break-word;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .technicalDescription{
+        font-size: 22px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: -0.4px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 13px;
+        text-align: left;
+    }
+
+    .descriptionFeatures{
+        display: flex;
+        gap: 5rem;
+    }
+
+    .descriptionG, .features{
+        width: 45%;
+        text-align: justify;
+    }   
 }

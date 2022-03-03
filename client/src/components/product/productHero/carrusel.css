@@ -1,34 +1,223 @@
-.carousel{
-    color: black;    
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
+/**********
+- de 640px*****/
+@media (max-width: 640px){
+    .carousel{
+        display: flex;
+        color: black;    
+        margin-left: 3rem;
+    }
+
+    .carousel-item{ 
+        height: 25rem;
+        align-items: center;
+        color: black;
+    }
+
+    .carousel-item img{
+        height: 25rem;
+    }
+
+    .carousel-control-prev-icon{
+        background-color:rgb(217, 49, 117);
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .carousel-control-next-icon{
+        background-color:rgb(217, 49, 117);
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+    }
 }
 
-.carousel-item{ 
-    height: 50rem;
-    align-items: center;
-    color: black;
+/************
++ de 640px***/
+
+@media (min-width: 640px){
+    .carousel{
+        display: flex;
+        color: black;    
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        margin-left: 2rem;
+
+    }
+
+    .carousel-item{ 
+        height: 25rem;
+        align-items: center;
+        color: black;
+        padding: 0;
+    }
+
+    .carousel-item img{
+        height: 25rem;
+        padding: 0;
+        margin-left: 0.5rem;
+    }
+
+    .carousel-control-prev-icon{
+        background-color:rgb(217, 49, 117);
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .carousel-control-next-icon{
+        background-color:rgb(217, 49, 117);
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        margin-left: 0.5rem;
+    }
 }
 
-.carousel-item img{
-    height: 50rem;
+/************
++ de 768px***/
 
+@media (min-width: 768px){
+    .carousel{
+        margin-left: 0.5rem;    
+    }
+
+    .carousel-item{ 
+        height: 22rem;
+        padding: 0.5rem 2rem;
+        margin-left: 0rem;
+    }
+
+    .carousel-item img{
+        height: 22rem;
+        padding: 0.5rem 0rem;
+    }
+
+    .carousel-control-prev-icon{
+        margin-right: -3rem;
+    }
+
+    .carousel-control-next-icon{
+        margin-right: 2rem;
+    }
 }
 
-.carousel-control-prev-icon{
-    background-color:rgb(217, 49, 117);
-    border: 1px solid rgb(218, 218, 218);
-    border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
+/************
++ de 840px***/
+
+@media (min-width: 840px){
+    .carousel{
+        margin: 0 auto;    
+    }
+
+    .carousel-item{ 
+        height: 35rem;
+        align-items: center;
+        color: black;
+        padding: 0.5rem 2rem;
+        margin-left: 0rem;
+    }
+
+    .carousel-item img{
+        height: 35rem;
+        padding: 0.5rem 0rem;
+    }
+
+    .carousel-control-prev-icon{
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-right: 2.2rem;
+    }
+
+    .carousel-control-next-icon{
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-right: -2rem;
+    }
 }
 
-.carousel-control-next-icon{
-    background-color:rgb(217, 49, 117);
-    border: 1px solid rgb(218, 218, 218);
-    border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
+/************
++ de 1024px***/
+
+@media (min-width: 1024px){
+    .carousel{
+        margin: 0 auto; 
+        padding: 0 1rem;   
+    }
+
+    .carousel-item{ 
+        height: 36rem;
+        align-items: center;
+        color: black;
+        padding: 0.5rem 2rem;
+        margin-left: -0.5rem;
+    }
+
+    .carousel-item img{
+        height: 36rem;
+        padding: 0.5rem 0rem;
+    }
+
+    .carousel-control-prev-icon{
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-right: -2.4rem;
+    }
+
+    .carousel-control-next-icon{
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-right: 2.5rem;
+    }
+}
+
+
+/************
++ de 1200px***/
+
+@media (min-width: 1200px){
+    .carousel{
+        color: black;    
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        padding: 0rem; 
+        
+    }
+
+    .carousel-item{ 
+        height: 45rem;
+        align-items: center;
+        color: black;
+    }
+
+    .carousel-item img{
+        height: 45rem;
+
+    }
+
+    .carousel-control-prev-icon{
+        background-color:rgb(217, 49, 117);
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .carousel-control-next-icon{
+        background-color:rgb(217, 49, 117);
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    
 }
