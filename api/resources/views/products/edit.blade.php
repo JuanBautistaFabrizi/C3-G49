@@ -57,6 +57,19 @@
 
             </div>
             <div class="mb-3 ">
+                <label class="form-label" for="exampleCheck1">Categoria</label>
+
+                <select name="category_id">
+                    <option value="1">Tv, Audio y Video</option>
+                    <option value="2" >Celulares, Notebooks y Tecnología</option>
+                    <option value="3">Electrodomésticos y Aires Ac.</option>
+                    <option value="4">Hogar, Muebles y Jardín</option>
+                    <option value="5">Salud, Belleza y Fitness</option>
+                    <option value="6">Bebés y Niños</option>
+
+                  </select>
+            </div>
+            <div class="mb-3 ">
                 <label class="form-label" for="exampleCheck1">Imagen</label>
               <input type="file" class="form-control" name="img" value="{{$product->img}}" >
 
