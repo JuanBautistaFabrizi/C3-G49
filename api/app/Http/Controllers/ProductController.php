@@ -36,6 +36,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+
         $request->validate([
             'name'=>'required|min:3|max:50',
             'stock'=>'required',
@@ -43,7 +44,8 @@ class ProductController extends Controller
             'price' =>'required',
             'cost' =>'required',
             'desc'=>'required',
-            'img'=>'required'
+            'img'=>'required',
+            'category_id'=>'required'
         ]);
         $nombre=$request->post('name');
         $stock=$request->post('stock');
@@ -52,7 +54,7 @@ class ProductController extends Controller
         $costo=$request->post('cost');
         $descripcion=$request->post('desc');
         $imagen=$request->post('img');
-
+        $category_id=$request->post('category_id');
         DB::table('products')->insert([
             'name'=>$nombre,
             'stock'=>$stock,
@@ -60,7 +62,8 @@ class ProductController extends Controller
             'price'=>$precio,
             'cost'=>$costo,
             'desc'=>$descripcion,
-            'img'=>$imagen
+            'img'=>$imagen,
+            'category_id'=>$category_id
         ]);
 
     }
@@ -107,7 +110,8 @@ class ProductController extends Controller
                 'price' =>'required',
                 'cost' =>'required',
                 'desc'=>'required',
-                'img'=>'required'
+                'img'=>'required',
+                'category_id'=>'required'
             ]);
               $product->name=$request->input('name');
               $product-> stock=$request->input('stock');
@@ -116,6 +120,7 @@ class ProductController extends Controller
               $product-> cost =$request->input('cost');
               $product->desc=$request->input('desc');
               $product->img=$request->input('img');
+              $product->category_id=$request->post('category_id');
               $product->save();
 
     }
