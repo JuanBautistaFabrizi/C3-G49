@@ -9,15 +9,14 @@ class Product extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'product_id';
+    //protected $primaryKey = 'product_id';
     protected $attributes = [
         'name',
         'stock',
         'desc',
         'price',
         'cost',
-        'img'
+        'img',
+        'brand'
     ];
 }
-
-
