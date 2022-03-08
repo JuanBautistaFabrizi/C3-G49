@@ -44,6 +44,13 @@
         border: 1px solid rgb(235, 235, 235);
     }
 
+    .otherProductCard:hover{
+        box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        border: 1px solid rgba(92, 92, 92, 0.8);
+    }
+
     .freeShip{
         display: flex;
         position: relative;
@@ -199,6 +206,13 @@
         width: 90%;
         margin-bottom: 3rem;
         border: 1px solid rgb(235, 235, 235);
+    }
+
+    .otherProductCard:hover{
+        box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        border: 1px solid rgba(92, 92, 92, 0.8);
     }
 
     .freeShip{
@@ -357,6 +371,13 @@
         width: 90%;
         margin-bottom: 3rem;
         border: 1px solid rgb(235, 235, 235);
+    }
+
+    .otherProductCard:hover{
+        box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        border: 1px solid rgba(92, 92, 92, 0.8);
     }
 
     .freeShip{
@@ -531,6 +552,13 @@
         border: 1px solid rgb(235, 235, 235);
     }
 
+    .otherProductCard:hover{
+        box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        border: 1px solid rgba(92, 92, 92, 0.8);
+    }
+
     .freeShip{
         display: flex;
         position: relative;
@@ -691,6 +719,14 @@
         width: 95%;
         margin-bottom: 3rem;
         border: 1px solid rgb(235, 235, 235);
+        transition: all 0.3s;
+    }
+    
+    .otherProductCard:hover{
+        box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        border: 1px solid rgba(92, 92, 92, 0.8);
     }
 
     .freeShip{
@@ -743,7 +779,6 @@
     }
 
     .discountPrice{
-        
         margin-right: 0.8rem;
         display: flex;
         align-items: center;

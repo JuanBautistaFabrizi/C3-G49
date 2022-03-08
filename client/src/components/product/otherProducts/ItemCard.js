@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+
+import { Link } from 'react-router-dom';
 
 import ahora24c from "./Images/ahora24c.png"
 import envioGratis from "./Images/envioGratis.png"
@@ -6,8 +8,27 @@ import envioGratis from "./Images/envioGratis.png"
 import './otherProducts.css'
 
 const ItemCard = ({props}) =>{
+    const [products, setProducts] = useState([])
+
+    /*useEffect(() =>{
+        fetch('https://api.mercadolibre.com/sites/MLA/search?category=MLA1648&limit=10')
+        .then(response => response.json())
+        .then(respJSON => {console.log(respJSON.results); setProducts(respJSON.results)})
+    },[])*/
+
+    useEffect(() =>{
+        fetch('127.0.0.1:8000/products')
+        .then(response => response.json())
+        .then(respJSON => {console.log(respJSON.results); setProducts(respJSON.results)})
+    },[])
+
+    function cashPrice (totalPrice) {
+        return Math.round(totalPrice - 0.24 *totalPrice);
+    }
+
+
     return(
-        <a href="" className="otherProductCard">
+        <Link to={`/producto/${props.id}`} className="otherProductCard">
             <div className="otherProduct">
                 <div className="othersImg">
                     <img className="freeShip"
@@ -35,14 +56,14 @@ const ItemCard = ({props}) =>{
                         <div><h3 className="creditOthers">$ {props.price}</h3></div> 
                         <div><span className="discounOthers">24% OFF</span></div>
                     </div>
-                    <strong className="realPrice">$ 15.000</strong>
+                    <strong className="realPrice">$ {cashPrice(props.price)}</strong>
                     <p className="arriving">Llega mañana</p>
                     <p className="takeProduct">Retiralo YA!</p>
                         
                     
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }
 

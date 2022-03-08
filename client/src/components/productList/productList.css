@@ -1,25 +1,189 @@
 
 /************
 ***- de 640px ***/
+@media (max-width: 640px){
+    .productListSection{
+        display: flex;
+        background-color: #F5F5F5;
+        width: 110vw;
+ 
+       
+    }
+
+    .listContainer{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Work Sans', sans-serif;
+        margin: 8rem 0.5rem 2rem -7rem;
+        justify-items: center;
+        
+    }
+
+    .listCard{
+        width: 35rem;
+        box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.62);
+        -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.62);
+        -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.62);
+        transition: all 0.3s;
+        margin-top: 1rem;
+    }
+
+    .listProduct{
+        position: relative;    
+        display: flex;
+        overflow: hidden;
+        background-color: white;
+        margin-top: 0px;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 100%;   
+    }
+
+    .listProduct:hover{
+        box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.67);
+        -webkit-box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.67);
+        -moz-box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.67);
+    }
+
+    .listProduct a{
+        text-decoration: none;
+    }
+
+    .listFreeShip{
+        display: flex;
+        position: relative;
+        width: 8.5rem;
+        height: 3.6rem;
+        margin: 1rem;
+        z-index: 2;
+    }
+
+    .listProdudctImg{
+        display: flex; 
+        justify-content: center;    
+    }
+
+    .mainImgList{
+        position: relative;
+        width: 13rem;
+        height: auto;
+        margin-top: 0rem;
+        z-index: 1;
+    }
+
+    .ahora24L{
+        display: flex;
+        position: relative;
+        height: 5rem;
+        width: auto;
+        margin: -3.5rem 0 0.5rem 1rem;
+        z-index: 5;
+    }
+
+    .listTexts{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+
+    .productNameList{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        letter-spacing: -0.18px;
+        padding: 0.5rem;
+        text-decoration: none;
+        height: 14rem;
+    }
+
+    .discountPriceList{
+        
+        margin-right: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .creditLists{
+        display: flex;
+        font-size: 1rem;
+        text-decoration: line-through;
+        line-height: 1;
+        letter-spacing: -0.26px;
+        color: rgb(136, 136, 136);    
+        margin-right: 0.9rem;
+        font-size: 2rem;
+        margin-top: 0.8rem;
+        font-weight: 400;
+
+    }
+
+    .discountList{
+        font-size: 1.5rem;
+        font-weight: 400;
+        border-radius: 0.2rem;
+        padding: 0.2rem 0.3rem;
+        background-color: rgb(217, 49, 117);
+      
+        letter-spacing: -0.28px;
+        color: rgb(255, 255, 255);
+    }
+
+    .realPriceList{
+        font-size: 2.2rem;
+        margin-top: 2rem;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.32px;
+        color: black;
+    }
+
+    .arrivingList{
+        color: rgb(32, 128, 65);
+        background-color: rgb(231, 248, 237);
+        line-height: 1.5;
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin: 2rem 6rem 0 6rem;
+    }
+
+    .takeit{
+        color: rgb(32, 128, 65);
+        background-color: rgb(231, 248, 237);
+        line-height: 1.5;
+        font-family: Arial;
+        font-size: 1.4rem;
+        margin: 1.5rem 6rem 2rem 6rem;
+        font-weight: 400;
+    }
+}
+
+
+/************
+***+ de 640px ***/
 @media (min-width: 640px){
     .productListSection{
         display: flex;
         background-color: #F5F5F5;
+        width: 110vw;       
     }
 
     .listContainer{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 3rem;
         font-family: 'Work Sans', sans-serif;
-        margin: 2rem auto;
+        margin: 8rem 0.5rem 2rem -14.5rem;
         justify-items: center;
         
     }
 
     .listCard{
         grid-column: auto;
-        width: 30rem;
+        width: 32rem;
         box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.62);
         -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.62);
         -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.62);
@@ -63,18 +227,18 @@
 
     .mainImgList{
         position: relative;
-        width: 15rem;
+        width: 13rem;
         height: auto;
-        margin-top: -3rem;
+        margin-top: -1rem;
         z-index: 1;
     }
 
     .ahora24L{
         display: flex;
         position: relative;
-        height: 6.4rem;
+        height: 6rem;
         width: auto;
-        margin: -4.5rem 0 0.5rem 1rem;
+        margin: -2.5rem 0 0.5rem 1rem;
         z-index: 5;
     }
 
@@ -88,8 +252,9 @@
         font-size: 1.4rem;
         line-height: 2rem;
         letter-spacing: -0.18px;
-        padding-top: 0.5rem;
+        padding: 0.5rem;
         text-decoration: none;
+        height: 14rem;
     }
 
     .discountPriceList{
@@ -103,7 +268,7 @@
         margin-bottom: 1.5rem;
     }
 
-    .creditList{
+    .creditLists{
         display: flex;
         font-size: 1.8rem;
         text-decoration: line-through;
@@ -157,28 +322,28 @@
     }
 }
 
-
 /************
-***+ de 640px ***/
-@media (max-width: 640px){
+***+ de 768px ***/
+@media (min-width: 768px){
     .productListSection{
         display: flex;
         background-color: #F5F5F5;
+        width: 116vw;       
     }
 
     .listContainer{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 3rem;
         font-family: 'Work Sans', sans-serif;
-        margin: 2rem auto;
+        margin: 4rem 0.5rem 2rem 2rem;
         justify-items: center;
         
     }
 
     .listCard{
         grid-column: auto;
-        width: 30rem;
+        width: 31rem;
         box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.62);
         -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.62);
         -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.62);
@@ -224,16 +389,16 @@
         position: relative;
         width: 15rem;
         height: auto;
-        margin-top: -3rem;
+        margin-top: -1rem;
         z-index: 1;
     }
 
     .ahora24L{
         display: flex;
         position: relative;
-        height: 6.4rem;
+        height: 6rem;
         width: auto;
-        margin: -4.5rem 0 0.5rem 1rem;
+        margin: -2.5rem 0 0.5rem 1rem;
         z-index: 5;
     }
 
@@ -244,11 +409,12 @@
     }
 
     .productNameList{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         line-height: 2rem;
         letter-spacing: -0.18px;
-        padding-top: 0.5rem;
+        padding: 0.5rem;
         text-decoration: none;
+        height: 11rem;
     }
 
     .discountPriceList{
@@ -262,15 +428,16 @@
         margin-bottom: 1.5rem;
     }
 
-    .creditList{
+    .creditLists{
         display: flex;
-        font-size: 1.8rem;
+        font-size: 2rem;
         text-decoration: line-through;
         line-height: 1.66;
         letter-spacing: -0.26px;
         color: rgb(136, 136, 136);    
         margin-right: 0.9rem;
         font-weight: 400;
+        margin-top: 0.8rem;
         text-align: center;
     }
 
@@ -285,6 +452,7 @@
         letter-spacing: -0.28px;
         color: rgb(255, 255, 255);
     }
+    
 
     .realPriceList{
         font-size: 2.2rem;
@@ -331,7 +499,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 3rem;
         font-family: 'Work Sans', sans-serif;
-        margin: 2rem auto;
+        margin: 2rem 0rem;
         justify-items: center;
         
     }
@@ -422,7 +590,7 @@
         margin-bottom: 1.5rem;
     }
 
-    .creditList{
+    .creditLists{
         display: flex;
         font-size: 1.8rem;
         text-decoration: line-through;

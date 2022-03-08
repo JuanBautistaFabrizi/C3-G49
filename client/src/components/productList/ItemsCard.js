@@ -7,9 +7,14 @@ import { Link } from "react-router-dom";
 
 import './productList.css';
 
-const ItemsCard = ({props}) =>{
+const ItemsCard = ({props}) =>{   
+
+    function cashPrice (totalPrice) {
+        return Math.round(totalPrice - 0.24 *totalPrice);
+    }
+
     return(
-        <Link to="/producto/${props.id}" className="listCard">
+        <Link to={`/producto/${props.id}`} className="listCard"> 
             <div className="listProduct">
                 <div className="listImg">
                     <img className="listFreeShip"
@@ -37,7 +42,7 @@ const ItemsCard = ({props}) =>{
                         <div><h3 className="creditLists">$ {props.price}</h3></div> 
                         <div><span className="discountList">24% OFF</span></div>
                     </div>
-                    <strong className="realPriceList">$ 15.000</strong>
+                    <strong className="realPriceList">$ {cashPrice(props.price)}</strong>
                     <p className="arrivingList">Retiralo YA!</p>
                         
                     

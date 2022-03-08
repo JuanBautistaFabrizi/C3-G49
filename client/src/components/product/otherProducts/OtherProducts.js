@@ -5,12 +5,16 @@ import './otherProducts.css'
 
  export default function OtherProducts (props) {
     const [products, setProducts] = useState([])
+    const baseURL = "https://127.0.0.1:8000/products";
 
-    useEffect(() =>{
-        fetch('https://api.mercadolibre.com/sites/MLA/search?category=MLA1648&limit=5')
+
+   useEffect(() =>{
+        fetch('baseURL')
         .then(response => response.json())
         .then(respJSON => {console.log(respJSON.results); setProducts(respJSON.results)})
     },[])
+
+
 
     return(
         <div className="otherProducts">

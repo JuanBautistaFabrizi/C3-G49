@@ -837,6 +837,10 @@
         font-size: 1.6rem;
     }
 
+    .payBank strong{
+        margin-right: 0.5rem;
+    }
+
     .shippingHeroe{
         display: flex;
         flex-direction: column;
