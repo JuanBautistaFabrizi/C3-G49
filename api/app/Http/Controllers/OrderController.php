@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class OrderController extends Controller
 {
@@ -13,7 +15,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+        $orders= DB::table('orders')->select('*')->get();
+        return view('orders.index',compact('orders')) ;
     }
 
     /**
@@ -23,7 +26,7 @@ class OrderController extends Controller
      */
     public function create()
     {
-        //
+        return view('orders.form');
     }
 
     /**
@@ -34,7 +37,15 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'order_date'=>'required'
+        ]);
+        $fecha=$request->post('order_date');
+
+
+        DB::table('orders')->insert([
+            'order_date'=>$fecha
+                    ]);
     }
 
     /**
@@ -45,7 +56,8 @@ class OrderController extends Controller
      */
     public function show($id)
     {
-        //
+        $order=DB::findOrFail($id);
+        return $order;
     }
 
     /**
@@ -56,7 +68,8 @@ class OrderController extends Controller
      */
     public function edit($id)
     {
-        //
+        $order=DB::findOrFail($id);
+        return view('orders.edit',compact('order'));
     }
 
     /**
@@ -68,7 +81,14 @@ class OrderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $order=Order::findOrFail($id);
+        $request->validate([
+          'order_date'=>'required'
+      ]);
+      $order->order_date=$request->input('order_date');
+
+
+      $order->save();
     }
 
     /**
@@ -79,6 +99,6 @@ class OrderController extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('orders')->where('id',$id)->delete();
     }
 }

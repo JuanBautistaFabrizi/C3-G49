@@ -14,18 +14,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        //$users = DB::select("SELECT * FROM producto");
-        $users = User::all();
-        //$users = User::orderBy('id','desc')->paginate();
-        $users = DB::table("users")->select('*')
-            ->where("name")
-            ->where("email")
-            ->where("password")
-            ->where("address")
-            ->where("phone")
-            ->where("status")
-            ->where("role")
-            ->get();
+       
+        $users=  DB::table('users')->select('*')->get();
         return $users;
     }
 
@@ -159,7 +149,7 @@ class UserController extends Controller
         $user = User::find($id);
         if($user-> status == true){
             DB::table('users')->where('idCliente',$id)->update([
-                'status' => false
+                'status' => 0
             ]);
         }
 

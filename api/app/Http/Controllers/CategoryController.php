@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CategoryController extends Controller
 {
@@ -13,7 +15,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories= DB::table('categories')->select('*')->get();
+        return view('categories.index',compact('categories')) ;
     }
 
     /**
@@ -23,7 +26,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('categories.form');
     }
 
     /**
@@ -34,7 +37,18 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name'=>'required|min:3|max:50',
+            'status'=>'required|max:1|numeric'
+        ]);
+        $nombre=$request->post('name');
+        $status=$request->post('status');
+
+        DB::table('categories')->insert([
+            'name'=>$nombre,
+            'status'=>$status
+
+        ]);
     }
 
     /**
@@ -45,7 +59,8 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
+        $category=DB::table('categories')->select('*')->where('id',$id)->first();
+        return $category;
     }
 
     /**
@@ -56,7 +71,8 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category=Category::findOrFail($id);
+        return view('categories.edit',compact('category'));
     }
 
     /**
@@ -68,7 +84,15 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $category=Category::findOrFail($id);
+        $request->validate([
+          'name'=>'required|min:3|max:50',
+          'status'=>'required|max:1|numeric'
+      ]);
+        $category->name=$request->input('name');
+        $category-> status=$request->input('status');
+
+        $category->save();
     }
 
     /**
@@ -79,6 +103,6 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('categories')->where('id',$id)->delete();
     }
 }
