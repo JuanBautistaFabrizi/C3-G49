@@ -23,7 +23,7 @@ Ingresar a la ruta de la api.
 
 * [Laravel](https://laravel.com/docs) - El framework usado para el back.
 * [Composer](https://getcomposer.org/doc/) - Manejador de dependencias.
-* [Rect](https://es.reactjs.org/docs/getting-started.html) - Biblioteca para el front.
+* [React](https://es.reactjs.org/docs/getting-started.html) - Biblioteca para el front.
 
 
 
@@ -31,7 +31,6 @@ Ingresar a la ruta de la api.
 
 * **Juan Bautista Fabrizi** - *Backend* - 
 * **Alejandro Telmo** - *Backend* - 
-* **Irene Machuca** - *Base de datos* - 
 * **Nicolás Bonder** - *Frontend* - 
 * **Daniela Escudero** - *Frontend* - 
 * **Cecilia Cuello** - *Frontend* - 
