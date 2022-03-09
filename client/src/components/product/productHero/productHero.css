@@ -1,0 +1,894 @@
+/***********
+- de 640px***/
+@media (max-width: 640px){
+    .cardHero{
+            max-width: 640px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 1rem;
+            margin: 1rem auto;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 400;
+            font-family: "Work Sans", sans-serif;    
+        }
+    
+        .leftColumn{            
+            position: relative;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+    
+    
+        .heroImage{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rightColumn{
+            padding: 0;
+            margin: 1rem 1.5rem;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 100%;
+            font-size: 1.6rem;
+            font-weight: 400;
+            font-family: "Work Sans", sans-serif;
+        }
+    
+        .productBrand{
+            font-family: "Work Sans", sans-serif;
+            padding: 0.5rem 0;
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+            margin-top: 0.5rem;
+            text-align: left;
+            color: rgb(0, 0, 0);
+        }
+    
+        .productNameHero{
+            font-family: "Work Sans", sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.18;
+            letter-spacing: -0.5px;
+            margin: 0.5rem 0;
+            text-align: left;
+            color: rgb(0, 0, 0);
+        }
+    
+        .pricesWrapped{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5rem;
+        }
+    
+        .creditPrice{
+            margin-bottom: 1rem; 
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 1.5rem;
+            
+            }
+    
+        .creditHero{
+            font-size: 2rem;
+            text-decoration: line-through;
+            line-height: 1.66;
+            letter-spacing: -0.26px;
+            color: rgb(136, 136, 136);    
+            margin: 0.5rem 0.9rem 0.5rem 0;
+            font-weight: 500;
+        }
+    
+        .discountHero{
+            font-size: 1.4rem;
+            font-weight: 400;
+            align-self: center;
+            border-radius: 0.2rem;
+            padding: 0.2rem 0.3rem;
+            background-color: rgb(217, 49, 117);
+            line-height: 1;
+            letter-spacing: -0.28px;
+            color: rgb(255, 255, 255);
+        }
+    
+        .cashPrice{
+            font-size: 3rem;
+            font-weight: 400;
+            margin: 0.5rem 0 1rem 0;
+        }
+    
+        .payBank{
+            border: 1px solid rgb(218, 218, 218);
+        }
+    
+        .payBank h3{
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6rem;
+            letter-spacing: -0.3px;
+            color: rgb(0, 0, 0);
+            background: rgb(244, 244, 244);
+            text-align: left;
+            padding: 1.6rem 0 1.6rem 1.5rem;
+            position: relative;
+            border-bottom: 1px solid rgb(218, 218, 218);
+            z-index: 2;
+            margin: 0rem;
+        }
+    
+        .specialOferts{
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 2.1rem;
+            
+        }
+    
+        .specialOferts img{
+            height: 3.1rem;
+            width: 4.8rem;
+            display: inline-flex;
+            border: 1px solid rgb(218, 218, 218);
+            border-radius: 2px;
+            margin-top: 0.2rem;
+            max-width: 100%;
+            
+        }
+    
+        .paymentOptions{
+            display: flex;
+            cursor: pointer;
+            flex-direction: row;
+            -webkit-box-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 0.4rem;
+        }
+    
+        .paymentInfo{
+            display: flex;
+            flex-direction: column;
+            margin-left: 1.5rem;
+            
+        }
+    
+        .paymentOptions p{
+            display: inline-flex;
+            text-align: left;
+            font-size: 1.5rem;
+            font-weight: 500;
+            letter-spacing: -0.38px;
+            color: rgb(74, 74, 74);
+            margin: 0;
+        }
+    
+        .paymentOptions small{
+            margin-top: 0.1rem;
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 1.29;
+            letter-spacing: -0.5px;
+            color: rgb(136, 136, 136);
+            display: inline-flex;
+            text-align: left;
+        }
+        
+        .shippingHeroe{
+            display: flex;
+            flex-direction: column;
+            font-family: "Work Sans", sans-serif;
+            margin-top: 2rem;
+        }
+    
+        .sendHeroe, .withdraw{
+            border-radius: 0.2rem;
+            border: 1px solid rgb(218, 218, 218);;
+            display: flex;
+        }
+    
+        .truckIcon, .storeIcon{
+            background-color: transparent;
+            margin: 0.5rem 1.8rem;
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    
+        .blackText{
+            padding: 0;
+            margin: 1rem 0 0 0;
+            font-size: 1.5rem;
+            line-height: 1;
+            letter-spacing: -0.5px;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+            font-family: "Work Sans", sans-serif;
+        }
+    
+        .greenText{
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.47px;
+            color: rgb(32, 128, 65);
+            margin: 0.5rem 0;
+        }
+    
+        .blueText{
+            cursor: pointer;
+            margin: 0 0 0.9rem 0;
+            color: rgb(0, 106, 253);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-family: "Work Sans", sans-serif;
+        }
+    
+        .rightArrow{
+            background-color: transparent;
+        }
+    }
+
+    /***********
++ de 640px***/
+@media (min-width: 640px){
+    .cardHero{
+            max-width: 840px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            margin: 1rem 0;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 400;
+            font-family: "Work Sans", sans-serif;    
+        }
+    
+        .leftColumn{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            max-width: 500px;
+            padding: 0px 15px;
+            text-align: left;
+            width: 100%;
+        }
+    
+    
+        .heroImage{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rightColumn{
+            margin: 1rem 1.5rem;
+            padding: 0 4rem;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 100%;
+            font-size: 1.6rem;
+            font-weight: 400;
+            font-family: "Work Sans", sans-serif;
+        }
+    
+        .productBrand{
+            font-family: "Work Sans", sans-serif;
+            padding: 0.5rem 0;
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+            margin-top: 0.5rem;
+            text-align: left;
+            color: rgb(0, 0, 0);
+        }
+    
+        .productNameHero{
+            font-family: "Work Sans", sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.18;
+            letter-spacing: -0.5px;
+            margin: 0.5rem 0;
+            text-align: left;
+            color: rgb(0, 0, 0);
+        }
+    
+        .pricesWrapped{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5rem;
+        }
+    
+        .creditPrice{
+            margin-bottom: 1rem; 
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 1.5rem;
+            
+            }
+    
+        .creditHero{
+            font-size: 2rem;
+            text-decoration: line-through;
+            line-height: 1.66;
+            letter-spacing: -0.26px;
+            color: rgb(136, 136, 136);    
+            margin: 0.5rem 0.9rem 0.5rem 0;
+            font-weight: 500;
+        }
+    
+        .discountHero{
+            font-size: 1.4rem;
+            font-weight: 400;
+            align-self: center;
+            border-radius: 0.2rem;
+            padding: 0.2rem 0.3rem;
+            background-color: rgb(217, 49, 117);
+            line-height: 1;
+            letter-spacing: -0.28px;
+            color: rgb(255, 255, 255);
+        }
+    
+        .cashPrice{
+            font-size: 3rem;
+            font-weight: 400;
+            margin: 0.5rem 0 1rem 0;
+        }
+    
+        .payBank{
+            border: 1px solid rgb(218, 218, 218);
+        }
+    
+        .payBank h3{
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.6rem;
+            letter-spacing: -0.3px;
+            color: rgb(0, 0, 0);
+            background: rgb(244, 244, 244);
+            text-align: left;
+            padding: 1.6rem 0 1.6rem 1.5rem;
+            position: relative;
+            border-bottom: 1px solid rgb(218, 218, 218);
+            z-index: 2;
+            margin: 0rem;
+        }
+    
+        .specialOferts{
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 2.1rem;
+            
+        }
+    
+        .specialOferts img{
+            height: 3.1rem;
+            width: 4.8rem;
+            display: inline-flex;
+            border: 1px solid rgb(218, 218, 218);
+            border-radius: 2px;
+            margin-top: 0.2rem;
+            max-width: 100%;
+            
+        }
+    
+        .paymentOptions{
+            display: flex;
+            cursor: pointer;
+            flex-direction: row;
+            -webkit-box-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 0.4rem;
+        }
+    
+        .paymentInfo{
+            display: flex;
+            flex-direction: column;
+            margin-left: 1.5rem;
+            
+        }
+    
+        .paymentOptions p{
+            display: inline-flex;
+            text-align: left;
+            font-size: 1.5rem;
+            font-weight: 500;
+            letter-spacing: -0.38px;
+            color: rgb(74, 74, 74);
+            margin: 0;
+        }
+    
+        .paymentOptions small{
+            margin-top: 0.1rem;
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 1.29;
+            letter-spacing: -0.5px;
+            color: rgb(136, 136, 136);
+            display: inline-flex;
+            text-align: left;
+        }
+    
+        .shippingHeroe{
+            display: flex;
+            flex-direction: column;
+            font-family: "Work Sans", sans-serif;
+            margin-top: 2rem;
+        }
+    
+        .sendHeroe, .withdraw{
+            border-radius: 0.2rem;
+            border: 1px solid rgb(218, 218, 218);;
+            display: flex;
+        }
+    
+        .truckIcon, .storeIcon{
+            background-color: transparent;
+            margin: 0.5rem 1.8rem;
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    
+        .blackText{
+            padding: 0;
+            margin: 1rem 0 0 0;
+            font-size: 1.5rem;
+            line-height: 1;
+            letter-spacing: -0.5px;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+            font-family: "Work Sans", sans-serif;
+        }
+    
+        .greenText{
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.47px;
+            color: rgb(32, 128, 65);
+            margin: 0.5rem 0;
+        }
+    
+        .blueText{
+            cursor: pointer;
+            margin: 0 0 0.9rem 0;
+            color: rgb(0, 106, 253);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-family: "Work Sans", sans-serif;
+        }
+    
+        .rightArrow{
+            background-color: transparent;
+        }
+    }
+
+/***********
++ de 768px***/
+@media (min-width: 768px){
+    .cardHero{
+            max-width: 768px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: row; 
+        }
+    
+        .leftColumn{
+            margin-right: 7.5rem;
+            
+        }
+    
+        .rightColumn{
+            padding: 0;
+            margin: 0;
+            max-width: 28rem;
+            display: flex;
+            flex-direction: column;
+            }
+    
+        .productBrand{
+            padding: 0.5rem 0 2rem;
+            margin: 0;
+        }
+    
+        .productNameHero{
+            padding: 0.5rem 0 2rem;
+            font-size: 2.7rem;
+            line-height: 1.18;
+            letter-spacing: -0.5px;
+            margin: 0;
+}
+    
+        .pricesWrapped{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5rem;
+        }
+    
+        .creditPrice{
+            margin-right: 0.8rem;
+            margin-bottom: 1.5rem;
+            }
+    
+        .creditHero{
+            font-size: 2.4rem;
+            margin-right: 0.9rem;
+        }
+    
+        .discountHero{
+            font-size: 1.6rem;
+          }
+    
+        .cashPrice{
+            font-size: 3.4rem;
+            font-weight: 400;
+          }
+    
+    
+        .payBank h3{
+            display: block;
+            font-size: 1.6rem;
+            padding: 1.6rem 0 1.6rem 1.5rem;
+            margin: 0rem;
+        }
+    
+        .specialOferts{
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 2.1rem;
+            
+        }
+    
+        .specialOferts img{
+            height: 3.4rem;
+            width: 5.3rem;
+            margin-top: 0.2rem;  
+        }
+    
+        .paymentOptions{
+            display: flex;
+            cursor: pointer;
+            margin-bottom: 0.8rem;
+        }
+    
+        .paymentInfo{
+            display: flex;
+            flex-direction: column;
+            margin-left: 1.5rem;
+            
+        }
+    
+        .paymentOptions p{
+            font-size: 1.6rem;
+            margin: 0;
+        }
+    
+        .paymentOptions small{
+            margin-top: 0.1rem;
+            font-size: 1.4rem;
+        }
+    
+        .shippingHeroe{
+            display: flex;
+            flex-direction: column;
+            font-family: "Work Sans", sans-serif;
+        }
+    
+        .sendHeroe, .withdraw{
+            border-radius: 0.2rem;
+            border: 1px solid rgb(218, 218, 218);;
+            display: flex;
+        }
+    
+        .truckIcon, .storeIcon{
+            background-color: transparent;
+            margin: 0 1.8rem;
+        }
+    
+        .blackText{
+            padding: 0;
+            margin: 1rem 0 0 0;
+            font-size: 1.5rem;
+           
+        }
+    
+        .greenText{
+            font-size: 1.5rem;
+           margin: 0.5rem 0;
+        }
+    
+        .blueText{
+            cursor: pointer;
+            margin: 0 0 0.9rem 0;
+            color: rgb(0, 106, 253);
+            font-size: 1.5rem;
+            display: flex;
+            
+        }
+    
+        .rightArrow{
+            background-color: transparent;
+        }
+    }
+
+
+    /***********
++ de 840px***/
+@media (min-width: 840px){
+    .cardHero{
+            max-width: 1024px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: row; 
+        }
+    
+        .leftColumn{
+            margin-right: 4rem;
+            
+        }
+    
+        .rightColumn{
+            padding: 0;
+            margin: 0;
+            max-width: 32rem;
+            display: flex;
+            flex-direction: column;
+            }
+    
+        .productBrand{
+            font-size: 3rem;
+        }
+    
+        .productNameHero{
+            font-size: 3rem;        
+        }
+    
+        .payBank h3{
+            display: block;
+            font-size: 1.8rem;
+            padding: 1.6rem 0.5rem 1.6rem 1.5rem;
+        }
+    
+        .specialOferts{
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 2.1rem;
+            
+        }
+    
+        .specialOferts img{
+            height: 3.4rem;
+            width: 5.3rem;
+            margin-top: 0.2rem;  
+        }
+    
+        .paymentOptions{
+            display: flex;
+            cursor: pointer;
+            margin-bottom: 0.8rem;
+        }
+    
+        .paymentInfo{
+            display: flex;
+            flex-direction: column;
+            margin-left: 1.2rem;
+            
+        }
+    
+        .paymentOptions p{
+            font-size: 1.6rem;
+            margin: 0;
+        }
+    
+        .paymentOptions small{
+            margin-top: 0.1rem;
+            font-size: 1.4rem;
+        }
+    
+        .shippingHeroe{
+            display: flex;
+            flex-direction: column;
+            font-family: "Work Sans", sans-serif;
+        }
+    
+        .sendHeroe, .withdraw{
+            border-radius: 0.2rem;
+            border: 1px solid rgb(218, 218, 218);;
+            display: flex;
+        }
+    
+        .truckIcon, .storeIcon{
+            background-color: transparent;
+            margin: 0 1.8rem;
+        }
+    
+        .blackText{
+            padding: 0;
+            margin: 1rem 0 0 0;
+            font-size: 1.5rem;
+           
+        }
+    
+        .greenText{
+            font-size: 1.5rem;
+           margin: 0.5rem 0;
+        }
+    
+        .blueText{
+            cursor: pointer;
+            margin: 0 0 0.9rem 0;
+            color: rgb(0, 106, 253);
+            font-size: 1.5rem;
+            display: flex;
+            
+        }
+    
+        .rightArrow{
+            background-color: transparent;
+        }
+    }
+
+    /*********************
+    ****+ de 1024px***/
+    @media (min-width: 1024px){
+        .cardHero{
+                max-width: 1200px;
+            }
+        
+            .leftColumn{
+                margin-right: auto;
+                
+            }
+        
+            .rightColumn{
+                padding: 0;
+                margin: 0;
+                max-width: 38rem;
+                display: flex;
+                flex-direction: column;
+                }
+        
+            .paymentInfo{
+                margin-left: 1.5rem;
+            }
+              
+        }
+    
+
+
+    /************
++ de 1200px***/
+
+@media (min-width: 1200px){
+.cardHero{
+        max-width: 1280px;
+        padding-bottom:4.1rem;
+        margin: 0 auto;
+    }
+
+    .leftColumn{
+        margin-right: 22.5rem;
+    }
+
+    .rightColumn{
+        padding: 0;
+        margin: 0;
+        max-width: 43.6rem;
+    }
+
+    
+    .productNameHero{       
+        font-size: 2.9rem;
+    }
+
+    .paymentOptions p{
+        display: inline-flex;
+        text-align: left;
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: -0.38px;
+        color: rgb(74, 74, 74);
+        margin: 0;
+    }
+
+    .paymentOptions small{
+        margin-top: 0.1rem;
+        font-size: 1.6rem;
+    }
+
+    .payBank strong{
+        margin-right: 0.5rem;
+    }
+
+    .shippingHeroe{
+        display: flex;
+        flex-direction: column;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .sendHeroe, .withdraw{
+        border-radius: 0.2rem;
+        border: 1px solid rgb(218, 218, 218);;
+        display: flex;
+    }
+
+    .truckIcon, .storeIcon{
+        background-color: transparent;
+        margin: 0 1.8rem;
+    }
+
+    .blackText{
+        padding: 0;
+        margin: 1rem 0 0 0;
+        font-size: 1.5rem;
+        line-height: 1;
+        letter-spacing: -0.5px;
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .greenText{
+        font-size: 1.5rem;
+        line-height: 1.2;
+        letter-spacing: -0.47px;
+        color: rgb(32, 128, 65);
+        margin: 0.5rem 0;
+    }
+
+    .blueText{
+        cursor: pointer;
+        margin: 0 0 0.9rem 0;
+        color: rgb(0, 106, 253);
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+    }
+
+    .rightArrow{
+        background-color: transparent;
+    }
+}

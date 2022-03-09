@@ -1,50 +1,166 @@
-.thirdFooter{
-    display: flex;
-    margin: 1rem 0 1rem 2.5rem;
-    font-size: 1.6rem;
-    font-weight: 400;
-    font-family: "Work Sans", sans-serif;
+@media (max-width: 640px){
+    .thirdFooter{
+        display: flex;
+        margin: 1rem 0 1rem 0.4rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+        
+    }
+
+    .copyright{
+        text-align: left;
+        font-size: 1.3rem;
+        color: rgb(74, 74, 74);
+        margin-bottom: 4rem;
+        width: 87%;
+    }
+
+    .disclaimer{
+    display: none;
+    }
+
+    .footerImg{
+        display: none;
+    }
+}
+
+/**********/
+@media (min-width: 768px){
+    .thirdFooter{
+        display: flex;
+        margin: 1rem 2rem;
+    }
+
+    .copyright{
+        text-align: left;
+        font-size: 1.3rem;
+        color: rgb(74, 74, 74);
+        margin-bottom: 4rem;
+        width: 87%;
+    }
+
+    .disclaimer{
+        text-align: left;
+        font-size: 1.1rem;
+        line-height: 1.33;
+        letter-spacing: -0.2px;
+        color: rgb(136, 136, 136);
+        width: 87%;
+    }
+
+    .footerImg{
+        display: none;
+    }
+
+}
+
+/*******
+************/
+/*Entre 1024 y 1200*/
+/* + de 1200*/
+
+@media (min-width: 1024px){
+    .thirdFooter{
+        display: flex;
+        margin: 1rem 0;
+        padding: 0 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+        
+    }
+
+    .copyright{
+        margin: 0.5rem 0 3rem 1rem;
+        width: 83%;
+        max-width: 700px;
+    }
+
+    .disclaimer{
+        width: 83%;
+        max-width: 700px;
+        margin-left: 1rem ;
+    }
+
+    .footerImg{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        
+    }
+
+    .firstStamp{
+        width: 6.4rem;
+        height: 6.31rem;
+    }
+
+    .secondStamp{
+        width: 12.5rem;
+        height: 4.16rem;
+    }
+
+    .thirdStamp{
+        width: 4rem;
+        height: 5.48rem;
+    }
+}
+
+/***********
+*************/
+/* + de 1200*/
+@media (min-width: 1200px){
+    .thirdFooter{
+        display: flex;
+        margin: 1rem 0;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: "Work Sans", sans-serif;
+        
+    }
+
+    .copyright{
+        text-align: left;
+        font-size: 1.3rem;
+        color: rgb(74, 74, 74);
+        margin-bottom: 4rem;
+        width: 87%;
+        max-width: 87%;
+    }
+
+    .disclaimer{
+        text-align: left;
+        font-size: 1.1rem;
+        line-height: 1.33;
+        letter-spacing: -0.2px;
+        color: rgb(136, 136, 136);
+        width: 87%;
+        max-width: 87%;
+    }
+
+    .footerImg{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        
+        
+    }
+
+    .firstStamp{
+        width: 6.4rem;
+        height: 6.31rem;
     
-}
-
-.copyright{
-    text-align: left;
-    font-size: 1.3rem;
-    color: rgb(74, 74, 74);
-    margin-bottom: 4rem;
-    width: 87%;
-}
-
-.disclaimer{
-    text-align: left;
-    font-size: 1.1rem;
-    line-height: 1.33;
-    letter-spacing: -0.2px;
-    color: rgb(136, 136, 136);
-    width: 87%;
-}
-
-.footerImg{
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-right: -3rem;
     
-}
+    }
 
-.firstStamp{
-    width: 6.4rem;
-    height: 6.31rem;
- 
-   
-}
+    .secondStamp{
+        width: 12.5rem;
+        height: 4.16rem;
+    }
 
-.secondStamp{
-    width: 12.5rem;
-    height: 4.16rem;
-}
-
-.thirdStamp{
-    width: 4rem;
-    height: 5.48rem;
+    .thirdStamp{
+        width: 4rem;
+        height: 5.48rem;
+    }
 }

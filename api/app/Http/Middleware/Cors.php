@@ -1,7 +1,10 @@
 <?php
 namespace App\Http\Middleware;
 use Closure;
+<<<<<<< HEAD
 use Illuminate\Http\Request;
+=======
+>>>>>>> nicoBonder
 class Cors
 {
     /**

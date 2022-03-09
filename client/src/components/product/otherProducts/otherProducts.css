@@ -1,0 +1,845 @@
+/***************
+- de 640px**/
+
+@media (max-width: 640px){
+    .otherProducts{
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: rgb(249, 249, 249);
+        margin-bottom: 1rem;
+        width: 110%;
+        margin-left: 0;
+    }
+
+    .otherProducts a{
+        text-decoration: none;
+    }
+
+    .otherProducts h2{
+        display: flex;
+        font-size: 1.6rem;
+        text-align: initial;
+        align-items: baseline;
+        line-height: 1.23;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    .allProducts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 0rem;
+        margin: 0 0 0 2rem;
+        max-width: 640px;
+    }
+
+    .otherProductCard{
+        background-color: white;
+        width: 90%;
+        margin-bottom: 3rem;
+        border: 1px solid rgb(235, 235, 235);
+    }
+
+    .otherProductCard:hover{
+        box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        border: 1px solid rgba(92, 92, 92, 0.8);
+    }
+
+    .freeShip{
+        display: flex;
+        position: relative;
+        width: 7.6rem;
+        height: 3.2rem;
+        margin: 1rem;
+        z-index: 2;
+    }
+
+    .otherProdudctImg{
+        display: flex; 
+        justify-content: center;    
+        width: 14rem;
+    }
+
+    .mainImgOther{
+        height: auto;
+        margin-top: 0rem;
+        margin-left: 2rem;
+        z-index: 1;
+    }
+
+    .ahora24c{
+        display: flex;
+        position: relative;
+        height: 5.2rem;
+        width: auto;
+        margin: -3rem 0 0rem 1rem;
+        z-index: 5;
+    }
+
+    .otherTexts{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        width: 15rem;
+    }
+
+    .productName{
+        font-size: 1rem;
+        line-height: 1.8rem;
+        letter-spacing: -0.18px;
+        padding: 0.5rem;
+        text-decoration: none;
+        height: 10rem;
+    }
+
+    .discountPrice{
+        margin-right: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 1.5rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .creditOthers{
+        display: flex;
+        font-size: 1.5rem;
+        text-decoration: line-through;
+        line-height: 1;
+        letter-spacing: -0.26px;
+        color: rgb(136, 136, 136);    
+        margin-right: 0.9rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .discounOthers{
+        font-size: 1rem;
+        font-weight: 400;
+        align-self: center;
+        border-radius: 0.2rem;
+        padding: 0.2rem 0.3rem;
+        background-color: rgb(217, 49, 117);
+        line-height: 1;
+        letter-spacing: -0.28px;
+        color: rgb(255, 255, 255);
+    }
+
+    .realPrice{
+        font-size: 1.6rem;
+        margin-top: 1.6rem;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.32px;
+        color: black;
+    }
+
+    .arriving{
+        color: rgb(32, 128, 65);
+        background-color: rgb(231, 248, 237);
+        line-height: 1.2;
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin: 2rem 3rem 0 3rem;
+    }
+
+    .takeProduct{
+        color: rgb(32, 128, 65);
+        background-color: rgb(231, 248, 237);
+        line-height: 1.2;
+        font-family: Arial;
+        font-size: 1.3rem;
+        margin: 1.5rem 3rem 2rem 3rem;
+        font-weight: 400;
+    }
+}
+
+
+/***************
++ de 640px*****/
+@media (min-width: 640px){
+    .otherProducts{
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: rgb(249, 249, 249);
+        margin-top: 0px;
+        margin-bottom: 1rem;
+        width: 105%;
+
+    }
+
+    .otherProducts a{
+        text-decoration: none;
+    }
+
+    .otherProducts h2{
+        display: flex;
+        font-size: 2rem;
+        text-align: initial;
+        align-items: baseline;
+        line-height: 1.23;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+
+    .allProducts{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 0rem;
+        margin: 0 0 0 2rem;
+        max-width: 768px;
+    }
+
+    .otherProductCard{
+        background-color: white;
+        width: 90%;
+        margin-bottom: 3rem;
+        border: 1px solid rgb(235, 235, 235);
+    }
+
+    .otherProductCard:hover{
+        box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        border: 1px solid rgba(92, 92, 92, 0.8);
+    }
+
+    .freeShip{
+        display: flex;
+        position: relative;
+        width: 7.6rem;
+        height: 3.2rem;
+        margin: 1rem;
+        z-index: 2;
+    }
+
+    .otherProdudctImg{
+        display: flex; 
+        justify-content: center;    
+        width: 16rem;
+    }
+
+    .mainImgOther{
+     
+        height: auto;
+        margin-top: 0rem;
+        margin-left: 2rem;
+        z-index: 1;
+    }
+
+    .ahora24c{
+        display: flex;
+        position: relative;
+        height: 5.8rem;
+        width: auto;
+        margin: -3rem 0 0rem 1rem;
+        z-index: 5;
+    }
+
+    .otherTexts{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        width: 18rem;
+    }
+
+    .productName{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        letter-spacing: -0.18px;
+        padding: 0.5rem;
+        text-decoration: none;
+        height: 10rem;
+    }
+
+    .discountPrice{
+        margin-right: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .creditOthers{
+        display: flex;
+        font-size: 1.8rem;
+        text-decoration: line-through;
+        line-height: 1.4;
+        letter-spacing: -0.26px;
+        color: rgb(136, 136, 136);    
+        margin-right: 0.9rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .discounOthers{
+        font-size: 1.2rem;
+        font-weight: 400;
+        align-self: center;
+        border-radius: 0.2rem;
+        padding: 0.2rem 0.3rem;
+        background-color: rgb(217, 49, 117);
+        line-height: 1;
+        letter-spacing: -0.28px;
+        color: rgb(255, 255, 255);
+    }
+
+    .realPrice{
+        font-size: 2rem;
+        margin-top: 2rem;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.32px;
+        color: black;
+    }
+
+    .arriving{
+        color: rgb(32, 128, 65);
+        background-color: rgb(231, 248, 237);
+        line-height: 1.2;
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin: 2rem 4rem 0 4rem;
+    }
+
+    .takeProduct{
+        color: rgb(32, 128, 65);
+        background-color: rgb(231, 248, 237);
+        line-height: 1.2;
+        font-family: Arial;
+        font-size: 1.4rem;
+        margin: 1.5rem 4rem 2rem 4rem;
+        font-weight: 400;
+    }
+}
+
+
+/***************
++ de 768px*****/
+@media (min-width: 768px){
+    .otherProducts{
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: rgb(249, 249, 249);
+        margin-top: 0px;
+        margin-bottom: 1rem;
+        width: 100%;
+
+    }
+
+    .otherProducts a{
+        text-decoration: none;
+    }
+
+    .otherProducts h2{
+        display: flex;
+        font-size: 2rem;
+        text-align: initial;
+        align-items: baseline;
+        line-height: 1.23;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+
+    .allProducts{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 0rem;
+        margin: 0 0 0 2rem;
+        max-width: 768px;
+    }
+
+    .otherProductCard{
+        background-color: white;
+        width: 90%;
+        margin-bottom: 3rem;
+        border: 1px solid rgb(235, 235, 235);
+    }
+
+    .otherProductCard:hover{
+        box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        border: 1px solid rgba(92, 92, 92, 0.8);
+    }
+
+    .freeShip{
+        display: flex;
+        position: relative;
+        width: 8.5rem;
+        height: 3.6rem;
+        margin: 1rem;
+        z-index: 2;
+    }
+
+    .otherProdudctImg{
+        display: flex; 
+        justify-content: center;    
+        width: 20rem;
+    }
+
+    .mainImgOther{
+     
+        width: 15rem;
+        height: auto;
+        margin-top: -1rem;
+        margin-left: 2rem;
+        z-index: 1;
+    }
+
+    .ahora24c{
+        display: flex;
+        position: relative;
+        height: 6.4rem;
+        width: auto;
+        margin: -4.5rem 0 0.5rem 1rem;
+        z-index: 5;
+    }
+
+    .otherTexts{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        width: 22rem;
+    }
+
+    .productName{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        letter-spacing: -0.18px;
+        padding: 0.5rem;
+        text-decoration: none;
+        height: 10rem;
+    }
+
+    .discountPrice{
+        
+        margin-right: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .creditOthers{
+        display: flex;
+        font-size: 1.8rem;
+        text-decoration: line-through;
+        line-height: 1.66;
+        letter-spacing: -0.26px;
+        color: rgb(136, 136, 136);    
+        margin-right: 0.9rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .discounOthers{
+        font-size: 1.5rem;
+        font-weight: 400;
+        align-self: center;
+        border-radius: 0.2rem;
+        padding: 0.2rem 0.3rem;
+        background-color: rgb(217, 49, 117);
+        line-height: 1;
+        letter-spacing: -0.28px;
+        color: rgb(255, 255, 255);
+    }
+
+    .realPrice{
+        font-size: 2.2rem;
+        margin-top: 2rem;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.32px;
+        color: black;
+    }
+
+    .arriving{
+        color: rgb(32, 128, 65);
+        background-color: rgb(231, 248, 237);
+        line-height: 1.5;
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin: 2rem 6rem 0 6rem;
+    }
+
+    .takeProduct{
+        color: rgb(32, 128, 65);
+        background-color: rgb(231, 248, 237);
+        line-height: 1.5;
+        font-family: Arial;
+        font-size: 1.4rem;
+        margin: 1.5rem 6rem 2rem 6rem;
+        font-weight: 400;
+    }
+}
+
+
+/***************
++ de 840px*****/
+@media (min-width: 840px){
+    .allProducts{
+        margin-left: 5rem;
+    }
+
+    .otherProducts h2{
+        margin-left: 5rem;
+    }
+}
+
+/***************
++ de 1024px*****/
+@media (min-width: 1024px){
+    .otherProducts{
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: rgb(249, 249, 249);
+        margin-top: 0px;
+        margin-bottom: 1rem;
+        width: 100%;
+
+    }
+
+    .otherProducts a{
+        text-decoration: none;
+    }
+
+    .otherProducts h2{
+        display: flex;
+        font-size: 2.2rem;
+        text-align: initial;
+        align-items: baseline;
+        line-height: 1.23;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+
+    .allProducts{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0 0 0 2rem;
+        max-width: 1024px;
+    }
+
+    .otherProductCard{
+        background-color: white;
+        width: 95%;
+        margin-bottom: 3rem;
+        border: 1px solid rgb(235, 235, 235);
+    }
+
+    .otherProductCard:hover{
+        box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        border: 1px solid rgba(92, 92, 92, 0.8);
+    }
+
+    .freeShip{
+        display: flex;
+        position: relative;
+        width: 8.5rem;
+        height: 3.6rem;
+        margin: 1rem;
+        z-index: 2;
+    }
+
+    .otherProdudctImg{
+        display: flex; 
+        justify-content: center;    
+        width: 25rem;
+    }
+
+    .mainImgOther{
+     
+        width: 15rem;
+        height: auto;
+        margin-top: -1rem;
+        margin-left: 2rem;
+        z-index: 1;
+    }
+
+    .ahora24c{
+        display: flex;
+        position: relative;
+        height: 6.4rem;
+        width: auto;
+        margin: -4.5rem 0 0.5rem 1rem;
+        z-index: 5;
+    }
+
+    .otherTexts{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        width: 31rem;
+    }
+
+    .productName{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        letter-spacing: -0.18px;
+        padding: 0.5rem;
+        text-decoration: none;
+        height: 10rem;
+    }
+
+    .discountPrice{
+        
+        margin-right: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .creditOthers{
+        display: flex;
+        font-size: 1.8rem;
+        text-decoration: line-through;
+        line-height: 1.66;
+        letter-spacing: -0.26px;
+        color: rgb(136, 136, 136);    
+        margin-right: 0.9rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .discounOthers{
+        font-size: 1.5rem;
+        font-weight: 400;
+        align-self: center;
+        border-radius: 0.2rem;
+        padding: 0.2rem 0.3rem;
+        background-color: rgb(217, 49, 117);
+        line-height: 1;
+        letter-spacing: -0.28px;
+        color: rgb(255, 255, 255);
+    }
+
+    .realPrice{
+        font-size: 2.2rem;
+        margin-top: 2rem;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.32px;
+        color: black;
+    }
+
+    .arriving{
+        color: rgb(32, 128, 65);
+        background-color: rgb(231, 248, 237);
+        line-height: 1.5;
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin: 2rem 6rem 0 6rem;
+    }
+
+    .takeProduct{
+        color: rgb(32, 128, 65);
+        background-color: rgb(231, 248, 237);
+        line-height: 1.5;
+        font-family: Arial;
+        font-size: 1.4rem;
+        margin: 1.5rem 6rem 2rem 6rem;
+        font-weight: 400;
+    }
+}
+
+
+
+/***************
++ de 1200px*****/
+@media (min-width: 1200px){
+    
+    .otherProducts{
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: rgb(249, 249, 249);
+        margin-top: 0px;
+        margin-bottom: 1rem;
+        width: 100%;
+
+    }
+
+    .otherProducts a{
+        text-decoration: none;
+    }
+
+    .otherProducts h2{
+        display: flex;
+        font-size: 2.2rem;
+        text-align: initial;
+        align-items: baseline;
+        line-height: 1.23;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+
+    .allProducts{
+        display: flex;
+
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0 0 0 2rem;
+        max-width: 1024px;
+    }
+
+    .otherProductCard{
+        background-color: white;
+        width: 95%;
+        margin-bottom: 3rem;
+        border: 1px solid rgb(235, 235, 235);
+        transition: all 0.3s;
+    }
+    
+    .otherProductCard:hover{
+        box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 7px 9px -1px rgba(0,0,0,0.75);
+        border: 1px solid rgba(92, 92, 92, 0.8);
+    }
+
+    .freeShip{
+        display: flex;
+        position: relative;
+        width: 8.5rem;
+        height: 3.6rem;
+        margin: 1rem;
+        z-index: 2;
+    }
+
+    .otherProdudctImg{
+        display: flex; 
+        justify-content: center;    
+        width: 25rem;
+    }
+
+    .mainImgOther{
+     
+        width: 15rem;
+        height: auto;
+        margin-top: -1rem;
+        margin-left: 2rem;
+        z-index: 1;
+    }
+
+    .ahora24c{
+        display: flex;
+        position: relative;
+        height: 6.4rem;
+        width: auto;
+        margin: -4.5rem 0 0.5rem 1rem;
+        z-index: 5;
+    }
+
+    .otherTexts{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        width: 29rem;
+    }
+
+    .productName{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        letter-spacing: -0.18px;
+        padding: 0.5rem;
+        text-decoration: none;
+        height: 10rem;
+    }
+
+    .discountPrice{
+        margin-right: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .creditOthers{
+        display: flex;
+        font-size: 1.8rem;
+        text-decoration: line-through;
+        line-height: 1.66;
+        letter-spacing: -0.26px;
+        color: rgb(136, 136, 136);    
+        margin-right: 0.9rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .discounOthers{
+        font-size: 1.5rem;
+        font-weight: 400;
+        align-self: center;
+        border-radius: 0.2rem;
+        padding: 0.2rem 0.3rem;
+        background-color: rgb(217, 49, 117);
+        line-height: 1;
+        letter-spacing: -0.28px;
+        color: rgb(255, 255, 255);
+    }
+
+    .realPrice{
+        font-size: 2.2rem;
+        margin-top: 2rem;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.32px;
+        color: black;
+    }
+
+    .arriving{
+        color: rgb(32, 128, 65);
+        background-color: rgb(231, 248, 237);
+        line-height: 1.5;
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin: 2rem 6rem 0 6rem;
+    }
+
+    .takeProduct{
+        color: rgb(32, 128, 65);
+        background-color: rgb(231, 248, 237);
+        line-height: 1.5;
+        font-family: Arial;
+        font-size: 1.4rem;
+        margin: 1.5rem 6rem 2rem 6rem;
+        font-weight: 400;
+    }
+    
+
+}

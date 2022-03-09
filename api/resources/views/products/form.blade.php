@@ -54,6 +54,7 @@
 
             </div>
             <div class="mb-3 ">
+<<<<<<< HEAD
                 <label class="form-label" for="exampleCheck1">Categoria</label>
 
                 <select name="category_id">
@@ -67,6 +68,8 @@
                   </select>
             </div>
             <div class="mb-3 ">
+=======
+>>>>>>> nicoBonder
                 <label class="form-label" for="exampleCheck1">Imagen</label>
               <input type="file" class="form-control" name="img" >
 

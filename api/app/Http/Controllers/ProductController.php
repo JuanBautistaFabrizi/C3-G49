@@ -36,7 +36,10 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
 
+=======
+>>>>>>> nicoBonder
         $request->validate([
             'name'=>'required|min:3|max:50',
             'stock'=>'required',
@@ -44,8 +47,12 @@ class ProductController extends Controller
             'price' =>'required',
             'cost' =>'required',
             'desc'=>'required',
+<<<<<<< HEAD
             'img'=>'required',
             'category_id'=>'required'
+=======
+            'img'=>'required'
+>>>>>>> nicoBonder
         ]);
         $nombre=$request->post('name');
         $stock=$request->post('stock');
@@ -54,7 +61,11 @@ class ProductController extends Controller
         $costo=$request->post('cost');
         $descripcion=$request->post('desc');
         $imagen=$request->post('img');
+<<<<<<< HEAD
         $category_id=$request->post('category_id');
+=======
+
+>>>>>>> nicoBonder
         DB::table('products')->insert([
             'name'=>$nombre,
             'stock'=>$stock,
@@ -62,8 +73,12 @@ class ProductController extends Controller
             'price'=>$precio,
             'cost'=>$costo,
             'desc'=>$descripcion,
+<<<<<<< HEAD
             'img'=>$imagen,
             'category_id'=>$category_id
+=======
+            'img'=>$imagen
+>>>>>>> nicoBonder
         ]);
 
     }
@@ -110,8 +125,12 @@ class ProductController extends Controller
                 'price' =>'required',
                 'cost' =>'required',
                 'desc'=>'required',
+<<<<<<< HEAD
                 'img'=>'required',
                 'category_id'=>'required'
+=======
+                'img'=>'required'
+>>>>>>> nicoBonder
             ]);
               $product->name=$request->input('name');
               $product-> stock=$request->input('stock');
@@ -120,7 +139,10 @@ class ProductController extends Controller
               $product-> cost =$request->input('cost');
               $product->desc=$request->input('desc');
               $product->img=$request->input('img');
+<<<<<<< HEAD
               $product->category_id=$request->post('category_id');
+=======
+>>>>>>> nicoBonder
               $product->save();
 
     }

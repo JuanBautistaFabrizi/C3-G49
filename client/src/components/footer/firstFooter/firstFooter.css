@@ -1,91 +1,502 @@
-.firstFooter{
-    grid-template-columns: 17% repeat(5, 1fr);
-    width: 100%;
-    display: grid;
-    column-gap: 2.8rem;
-    padding: 2rem 0;
-    font-family: 'Work Sans', sans-serif;
-    background-color: rgb(255, 255, 255);
+/* - de 640px */
+@media (max-width: 640px){
+    .firstFooter{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Work Sans', sans-serif;
+        background-color: rgb(255, 255, 255);
+        border-top: 1px solid rgb(218, 218, 218);
+        padding: 3rem 1rem 2rem 1.5rem;
+    }
+
+    .footerHeadline{
+        margin: 2rem 0 0.5rem 0;
+        display: flex;
+    }
+
+    .firstFooter h3{
+        font-size: 1.3rem;
+        margin: 0 0.5rem 0.5rem 0;
+        letter-spacing: -0.5px;
+        color: black;
+        font-weight: 400;
+        text-align: left;
+        font-family: 'Work Sans';
+    }
+
+    .firstFooter p{
+        font-size: 1.3rem;
+        line-height: 1.4;
+        font-weight: 400;
+        margin: 0;
+        color: rgb(74, 74, 74);
+        text-align: left;
+        font-family: 'Work Sans';
+    }
+
+    .firstFooter a{
+        display: flex;
+        font-size: 1.6rem;
+        line-height: 1;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+        white-space: nowrap;
+        cursor: pointer;
+        text-align: left;
+        font-family: 'Work Sans';
+    }
+
+    .corporateSales{
+        margin: 2rem 0 0.5rem 0;
+    }
+
+    .logosFooter{
+        display: flex;
+        flex-direction: column;
+        justify-self: left;
+    }
+
+    .followUs{
+        display: flex;
+        justify-content: stretch;
+        align-items:flex-end;
+        height: 3.8rem;
+
+    }
+
+    .followUs a{
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+
+    img{
+        width: 17rem;
+        height: 2.8rem;
+    }
+
+    svg{
+        display: flex;
+        background-color: rgb(204, 204, 204);
+        height: auto;
+        padding: 0.5rem;
+        border-radius: 100%;
+        cursor: pointer;
+        color: white;
+        fill: white;
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+
+    .empyFooter{
+        width: auto;
+        height: auto;
+        display: none;
+    }    
+}
+
+
+/**************
+****************/
+
+/***+ de 640***/
+
+@media (min-width: 640px){
+    .firstFooter{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 19% repeat(3, 1fr); 
+        column-gap: 3.5rem;      
+        font-family: 'Work Sans', sans-serif;
+        background-color: rgb(255, 255, 255);
+        border-top: 1px solid rgb(218, 218, 218);
+        padding: 2.5rem 1rem 1rem 1.5rem;
+    }
+
+    .footerHeadline{
+        margin: 0 0 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstFooter h3{
+        font-size: 1.1rem;
+        margin: 0 0.5rem 0 0;
+        letter-spacing: -0.5px;
+        color: black;
+        font-weight: 400;
+        text-align: left;
+        font-family: 'Work Sans';
+    }
+
+    .firstFooter p{
+        font-size: 1.1rem;
+        line-height: 1.2;
+        font-weight: 400;
+        margin: 0;
+        color: rgb(74, 74, 74);
+        text-align: left;
+        font-family: 'Work Sans';
+    }
+
+    .firstFooter a{
+        display: flex;
+        font-size: 1.2rem;
+        line-height: 1.1;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+        white-space: nowrap;
+        cursor: pointer;
+        text-align: left;
+        font-family: 'Work Sans';
+    }
+
+    .corporateSales{
+        margin: 1.2rem 0 0.5rem 0;
+        grid-column: 2 / auto;
+    }
+
+    .logosFooter{
+        display: flex;
+        flex-direction: column;
+        justify-self: left;
+    }
+
+    .followUs{
+        display: flex;
+        justify-content: stretch;
+        align-items:flex-end;
+        height: 3rem;
+
+    }
+
+    .followUs a{
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
+
+    img{
+        width: 13.8rem;
+        height: 2.3rem;
+    }
+
+    svg{
+        display: flex;
+        background-color: rgb(204, 204, 204);
+        height: auto;
+        padding: 0.5rem;
+        border-radius: 100%;
+        cursor: pointer;
+        color: white;
+        fill: white;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .empyFooter{
+        width: auto;
+        height: auto;
+        display: none;
+    }    
+}
+
+/***************
+***************/
+/***+ de 768***/
+
+@media (min-width: 768px){
+    .firstFooter{
+        width: 100%;
+        grid-template-columns: 31% repeat(4, 1fr);
+        display: grid;
+        column-gap: 1rem;
+        font-family: 'Work Sans', sans-serif;
+        background-color: rgb(255, 255, 255);
+        border-top: 1px solid rgb(218, 218, 218);
+        padding: 2rem 1rem;
+
+    }
+
+    .footerHeadline{
+        margin: 0rem 0 0.5rem 0;
+        display: block;
+    }
+
+    .firstFooter h3{
+        font-size: 1.1rem;
+        margin: 0 0.5rem 0 0;
+        letter-spacing: -0.5px;
+        color: black;
+        font-weight: 400;
+        text-align: left;
+        font-family: 'Work Sans';
+    }
+
+    .firstFooter p{
+        font-size: 1.1rem;
+        line-height: 1.2;
+        font-weight: 400;
+        margin: 0;
+        color: rgb(74, 74, 74);
+        text-align: left;
+        font-family: 'Work Sans';
+    }
+
+    .firstFooter a{
+        
+        font-size: 1.2rem;
+        line-height: 1.1;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        text-align: left;
+        font-family: 'Work Sans';
+    }
+
+    .corporateSales{
+        margin: 0rem 0 0.5rem 0;
+        grid-column: 5;
+    }
+
+    .logosFooter{
+        grid-column: 1 / auto;
+        justify-self: left;
+    }
+
+    .followUs{
+        display: flex;
+        justify-content: stretch;
+        align-items:flex-end;
+        height: 3rem;
+        
+    }
+
+    .followUs a{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    img{
+        width: 12.4rem;
+        height: 2.05rem;
+    }
+
+    svg{
+        display: flex;
+        background-color: rgb(204, 204, 204);
+        height: auto;
+        padding: 0.5rem;
+        border-radius: 100%;
+        cursor: pointer;
+        color: white;
+        fill: white;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .empyFooter{
+        width: auto;
+        height: auto;
+        display: none;
+    }    
+}
+
+/*******************
+*******************/
+/***+ de 840px***/
+
+@media (min-width: 840px){
+    .firstFooter{
+        width: 100%;
+        grid-template-columns: 19% repeat(4, 1fr);
+        display: grid;
+        column-gap: 1.5rem;
+        padding: 2rem 1rem;
+
+    }
+
+    .firstFooter h3{
+        font-size: 1.3rem;
+    }
+
+    .firstFooter p{
+        font-size: 1.3rem;
+    }
+
+    .firstFooter a{
+        font-size: 1.3rem;
+    }
+
+    .followUs a{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+
+    img{
+        width: 13.24rem;
+        height: 2.25rem;
+    }
+
+    svg{
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+   
+}
+
+/*******************
+*******************/
+/***Entre 1024 y 1200***/
+
+@media (min-width: 1024px){
+    .firstFooter{
+        width: 100%;
+        grid-template-columns: 23% repeat(4, 1fr);
+        display: grid;
+        column-gap: 1.5rem;
+        padding: 2rem;
+
+    }
+
+    .firstFooter h3{
+        font-size: 1.4rem;
+    }
+
+    .firstFooter p{
+        font-size: 1.4rem;
+    }
+
+    .firstFooter a{
+        font-size: 1.4rem;
+    }
+
+    .followUs a{
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+
+    .corporateSales{
+        margin: 0rem 0 0rem 0;
+        grid-column: 5;
+    }
     
-    padding: 8rem 1.5rem 2rem 1.5rem;
+    img{
+        width: 16rem;
+        height: 2.75rem;
+    }
 
-}
-
-.footerHeadline{
-    margin: 0 0 0.5rem 0;
-}
-
-.firstFooter h3{
-    font-size: 1.5rem;
-    margin: 0 0.5rem 0.5rem 0;
-    letter-spacing: -0.5px;
-    color: black;
-    font-weight: 400;
-    text-align: left;
-    font-family: 'Work Sans';
-}
-
-.firstFooter p{
-    font-size: 1.3rem;
-    line-height: 1.4;
-    font-weight: 400;
-    margin: 0;
-    color: rgb(74, 74, 74);
-    text-align: left;
-    font-family: 'Work Sans';
-}
-
-.firstFooter a{
-    display: flex;
-    font-size: 1.8rem;
-    line-height: 1;
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
-    white-space: nowrap;
-    cursor: pointer;
-    text-align: left;
-    font-family: 'Work Sans';
-}
-
-.logosFooter{
-    grid-column: 1 / auto;
-    display: block;
-
-}
-
-.followUs{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:flex-end;
-    height: 3.8rem;
-}
-
-.followUs a{
-    width: 2.8rem;
-    height: 2.8rem;
+    svg{
+        height: 2.6rem;
+        width: 2.6rem;
+    }
+   
 }
 
 
-img{
-    width: 19.56rem;
-    height: 3rem;
-}
+/**************
+****************/
+/*+ de 1200px*/
+@media (min-width: 1200px){
+    .firstFooter{
+        grid-template-columns: 17% repeat(5, 1fr);
+        width: 100%;
+        display: grid;
+        column-gap: 2.8rem;
+        font-family: 'Work Sans', sans-serif;
+        background-color: rgb(255, 255, 255);
+        border-top: 1px solid rgb(218, 218, 218);
+        padding: 4rem 2rem 2rem 2rem;
+    }
 
-svg{
-    display: inline-flex;
-    align-self: center;
-    background-color: rgb(204, 204, 204);
-    height: auto;
-    padding: 0.6rem;
-    border-radius: 100%;
-    cursor: pointer;
-    color: white;
-    fill: white;
-}
+    .footerHeadline{
+        margin: 0 0 0.5rem 0;
+    }
 
-.empyFooter{
-    width: auto;
-    height: auto;
-    display: none;
+    .firstFooter h3{
+        font-size: 1.5rem;
+        margin: 0 0.5rem 0.5rem 0;
+        letter-spacing: -0.5px;
+        color: black;
+        font-weight: 400;
+        text-align: left;
+        font-family: 'Work Sans';
+    }
+
+    .firstFooter p{
+        font-size: 1.3rem;
+        line-height: 1.4;
+        font-weight: 400;
+        margin: 0;
+        color: rgb(74, 74, 74);
+        text-align: left;
+        font-family: 'Work Sans';
+    }
+
+    .firstFooter a{
+        display: flex;
+        font-size: 1.8rem;
+        line-height: 1;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+        white-space: nowrap;
+        cursor: pointer;
+        text-align: left;
+        font-family: 'Work Sans';
+    }
+
+    .logosFooter{
+        grid-column: 1 / auto;
+        display: block;
+        justify-self: left;
+    }
+
+    .followUs{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: -1.2rem;
+        align-items:flex-end;
+        height: 3.8rem;
+
+    }
+
+    .followUs a{
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .corporateSales{
+        margin: 0 0 0.5rem 0;
+        grid-column: 5 / auto;
+    }
+
+    img{
+        width: 21rem;
+        height: 3.5rem;
+    }
+
+    svg{
+        display: inline-flex;
+        align-self: center;
+        background-color: rgb(204, 204, 204);
+        height: auto;
+        padding: 0.6rem;
+        border-radius: 100%;
+        cursor: pointer;
+        color: white;
+        fill: white;
+    }
+
+    .empyFooter{
+        width: auto;
+        height: auto;
+        display: none;
+    }
 }
