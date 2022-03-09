@@ -16,7 +16,8 @@ class UserController extends Controller
     {
        
         $users=  DB::table('users')->select('*')->get();
-        return $users;
+        
+        return response()->json($users) ;
     }
 
     /**
