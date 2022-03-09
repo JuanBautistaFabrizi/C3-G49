@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-
+use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     /**
@@ -14,8 +14,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-        //$users = User::orderBy('id','desc')->paginate();
+       
+        $users=  DB::table('users')->select('*')->get();
         return $users;
     }
 
@@ -26,7 +26,9 @@ class UserController extends Controller
      */
     public function create()
     {
+        
 
+        
     }
 
     /**
@@ -37,17 +39,34 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $user = new User();
-        $user->name = $request->name;
-        $user->email = $request->email;
-        $user->password = $request->password;
-        $user->address = $request->address;
-        $user->phone = $request->phone;
-        $user->status = $request->status;
-        $user->role = $request->role;
+        $this->validate($request, array(
+            'name' => 'required',
+            'email' => 'required',
+            'password' => 'required',
+            'address' => 'required',
+            'phone' => 'required',
+            'status' => 'required',
+            'role' => 'required'
+          ));
 
-        return $user->save();
-    }
+        $name=$request->post('name');
+        $email=$request->post('email');
+        $password=$request->post('password');
+        $address=$request->post('address');
+        $phone=$request->post('phone');
+        $status=$request->post('status');
+        $role=$request->post('role');
+
+        DB::table('users')->insert([
+            'name'=>$name,
+            'email'=>$email,
+            'password'=> $password,
+            'address'=>$address,
+            'phone'=>$phone,
+            'status'=>$status,
+            'role'=>$role
+        ]);
+     }
 
     /**
      * Display the specified resource.
@@ -57,7 +76,8 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user = User::find($id);
+        
+        $user=DB::table('user')->where('id',$id)->first();
         return $user;
     }
 
@@ -69,7 +89,7 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        $user = User::find($id);
+        
 
     }
 
@@ -82,8 +102,41 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+
+        $request->validate([
+            "name" => 'required',
+            "email" => 'required',
+            "password" => 'required',
+            "address" => 'required',
+            "phone" => 'required',
+            "status" => 'required',
+            "role" => 'required'
+        ]);
+
+        $name = $request->post('name');
+        $email = $request->post('email');
+        $password = $request->post('password');
+        $address = $request->post('address');
+        $phone = $request->post('phone');
+        $status = $request->post('status');
+        $role = $request->post('role');
+
+        DB::table('users')->where('idCliente',$id)->update([
+            "name" => $name,
+            "email" => $email,
+            "password" => $password,
+            "address" => $address,
+            "phone" => $phone,
+            "status" => $status,
+            "role" => $role
+
+         ]);
+
+         return  $user->save();
     }
+
+
 
     /**
      * Remove the specified resource from storage.
@@ -93,6 +146,14 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::find($id);
+        if($user-> status == true){
+            DB::table('users')->where('idCliente',$id)->update([
+                'status' => 0
+            ]);
+        }
+
+        return $user;
     }
 }
+

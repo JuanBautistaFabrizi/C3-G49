@@ -1,0 +1,106 @@
+.divCategories, .divCardsOfertas {
+    background-color: rgb(241, 241, 241);
+}
+
+.categories {
+    padding-top: 60px;
+}
+
+.ulcategories {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 0px;
+    min-width: 0px;
+    overflow: auto hidden;
+    list-style: none;
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+
+.ulcategories li {
+    scroll-snap-stop: always;
+    position: relative;
+    scroll-snap-align: start;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.center {
+    box-sizing: content-box;
+    margin: 0px auto;
+    max-width: 1280px;
+}
+
+.licategories span {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: -0.3px;
+    text-align: center;
+    color: rgb(72, 72, 72);
+    padding-top: 10px;
+}
+
+.img {
+    background-color: white;
+    border-radius: 40px;
+}
+
+.img:hover {
+    box-shadow: 3px 3px 5px 3px rgb(216, 216, 216)
+}
+
+.divCardsOfertas {
+    padding: 60px 15px;
+}
+
+.cartelofertas {
+    background-image: linear-gradient(-90deg, rgb(211, 0, 152), rgb(68, 0, 153));
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.25em 0.5em;
+    margin-block-end: 0.2em;
+    margin-inline: 18px;
+    letter-spacing: -0.53px;
+    font-size: 32px;
+    width: fit-content;
+}
+
+.cards {
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 0px;
+    min-width: 0px;
+    overflow: auto hidden;
+    list-style: none;
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    padding: 15px;
+    width: 265px;
+    height: 400px;
+    margin: 10px;
+}
+
+.card h3 {
+    overflow: auto hidden;
+}
+
+.divcard {
+    text-align: center;
+}
+
+.divCardsOfertas section {
+    box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px 0px;
+    border: 1px solid rgb(218, 218, 218);
+    background-color: white;
+}

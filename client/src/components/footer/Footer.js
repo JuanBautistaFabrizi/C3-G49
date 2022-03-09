@@ -8,7 +8,7 @@ import './secondFooter/secondFooter.css'
 import './thirdFooter/thirdFooter.css'
 import './footer.css'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 

@@ -1,0 +1,134 @@
+.divEnvios, .divOfertasDestacadas {
+    background-color: rgb(241, 241, 241);
+}
+
+.divOfertasDestacadas {
+    padding-top: 50px;
+}
+
+.cardd {
+    padding: 15px;
+    width: 300px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    margin: 3px;
+    border-radius: 4px;
+}
+
+.cardd:hover {
+    box-shadow: rgba(0, 0, 0, 0.219) 0px 2px 4px 0px;
+}
+
+.center {
+    box-sizing: content-box;
+    margin: 0px auto;
+    max-width: 1280px;
+}
+
+.divEnvios {
+    flex-direction: row;
+    padding: 0px 15px;
+    display: flex;
+    box-sizing: content-box;
+    margin: 0px auto;
+    max-width: 1280px;
+}
+
+.enviosa1, .enviosa2 {
+    margin-right: 5px;
+    text-decoration: none;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px 0px;
+    background-color: white;
+    transition: all 275ms cubic-bezier(0.46, 0.03, 0.52, 0.96) 0s;
+    border: 0px !important;
+}
+
+.vermas {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid rgb(153, 0, 115);
+    transition: all 275ms cubic-bezier(0.46, 0.03, 0.52, 0.96) 0s;
+    font-size: 14px;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    line-height: 0.90;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    color: rgb(153, 0, 120);
+    text-align: center;
+    margin-right: auto;
+}
+
+.sillonoff {
+    display: inline-flex;
+    padding: 6px 9px;
+    width: auto;
+    margin: 0px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.3px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background-color: rgb(101, 75, 185);
+}
+
+.sillonoffp {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.27;
+    letter-spacing: -0.9px;
+    color: black;
+    margin-bottom: 13px;
+}
+
+.enviosa1:hover, .enviosa2:hover {
+    box-shadow: 3px 3px 5px 3px rgb(216, 216, 216)
+}
+
+.enviosa2::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 28.75%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(101, 75, 185, 0.8);
+}
+
+.enviosa1::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 28.75%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(186, 30, 146, 0.7);
+}
+
+.divEnvios figure {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    z-index: 1;
+    margin: 0px;
+    position: relative;
+    padding-right: 20px;
+    width: 43.45%;
+}
