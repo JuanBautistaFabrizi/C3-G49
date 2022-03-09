@@ -1,0 +1,210 @@
+.divOfertasDestacadas2, .divOff, .divOff2 {
+    background-color: rgb(241, 241, 241);
+}
+
+.center {
+    box-sizing: content-box;
+    margin: 0px auto;
+    max-width: 1280px;
+}
+
+.divOff {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 15px;
+}
+
+.divOff figure {
+    width: 100%;
+    height: 162px;
+    position: relative;
+    margin: 0px;
+}
+
+.figdiv1 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.figdiv2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(217, 49, 117);
+    padding: 10px 8px;
+    top: 0px;
+    left: 18px;
+}
+
+.hasta {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    color: white;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    min-height: 0px;
+    min-width: 0px;
+}
+
+.descuento {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -2.1px;
+    color: white;
+}
+
+.porcentaje {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -0.6px;
+    color: white;
+    margin-left: 0.1em;
+    top: 0.3em;
+}
+
+.rebajas {
+    width: 100%;
+    padding: 9px 12px;
+    background-color: white;
+    box-sizing: border-box;
+    min-height: 0px;
+    min-width: 0px;
+}
+
+.divOff a {
+    text-decoration: none;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 50%;
+    max-width: 50%;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px 0px;
+    border: 1px solid rgb(238, 238, 238);
+    background-color: white;
+    transition: all 275ms cubic-bezier(0.46, 0.03, 0.52, 0.96) 0s;
+}
+
+.divOff a:hover {
+    outline: none;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 2.5px 0.5px, 
+    rgb(0 0 0 / 7%) 0px 8px 5px 0px,
+    rgb(0 0 0 / 4%) 0px 9px 12px 0px,
+    rgb(0 0 0 / 2%) 0px 12px 18px 0px;
+}
+
+.divOff2 {
+    grid-auto-flow: column;
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 25px;
+    max-width: 1280px;
+    margin: 30px auto auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+    padding: 60px 15px;
+}
+
+.divOff2 a {
+    text-decoration: none;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px 0px;
+    border: 1px solid rgb(238, 238, 238);
+    box-sizing: border-box;
+    min-height: 0px;
+    min-width: 0px;
+}
+
+.divoff11 figure {
+    display: flex;
+    height: 184px;
+}
+
+.divoff11 picture {
+    height: 100%;
+}
+
+.divoff11 img {
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+    background: white;
+    overflow: hidden;
+}
+
+.divoff22 {
+    margin: 10px 15px 10px 0px;
+    align-self: center;
+}
+
+.divoff22 h2 {
+    box-sizing: border-box;
+    font-weight: 600;
+    letter-spacing: -0.7px;
+    line-height: 1;
+    margin: 0px;
+    margin-block-end: 10px;
+    padding: 4px 9px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(186, 30, 146);
+}
+
+.divoff22 p {
+    box-sizing: border-box;
+    display: block;
+    font-weight: 600;
+    letter-spacing: -0.9px;
+    line-height: 1.27;
+    margin: 0px;
+    margin-block-end: 10px;
+    padding: 0px;
+    color: black;
+}
+
+.divoff22 div {
+    border: 1px solid rgb(68, 0, 153);
+    border-radius: 2px;
+    color: rgb(68, 0, 153);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0.7;
+    letter-spacing: -0.4px;
+    padding: 1em 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color 275ms cubic-bezier(0.46, 0.03, 0.52, 0.96) 0s, background-color 275ms cubic-bezier(0.46, 0.03, 0.52, 0.96) 0s;
+}
+
+.divOff2 a:hover {
+    outline: none;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 2.5px 0.5px, 
+    rgb(0 0 0 / 7%) 0px 8px 5px 0px,
+    rgb(0 0 0 / 4%) 0px 9px 12px 0px,
+    rgb(0 0 0 / 2%) 0px 12px 18px 0px;
+}
