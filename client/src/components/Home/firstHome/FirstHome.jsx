@@ -12,7 +12,7 @@ import './firstHome.css';
 function firstHome() {
   return (
     <div>
-        <div className='sliderarrow'>
+        {/*<div className='sliderarrow'>
         <div className='slider'>
                 <ul className='ul'>
                     <li className='li' id='item1'> <a href=""><img src={slider1} alt="" /></a> </li>
@@ -84,7 +84,7 @@ function firstHome() {
                     </ul>
                 </div>
         </div>
-        </div>
+  </div> */}
         <div>
             <div className='paymentdiv'>
                 <div className='metodosDePago'>

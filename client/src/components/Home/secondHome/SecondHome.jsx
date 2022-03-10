@@ -6,6 +6,8 @@ import herramientasdejardin from '../img/herramientasdejardin.png';
 import bebesCochecito from '../img/bebesCochecito.jpg';
 import saludPesas from '../img/saludPesas.jpg';
 
+import { Link } from "react-router-dom";
+
 import './secondHome.css';
 
 function SecondHome(props) {
@@ -125,7 +127,7 @@ function SecondHome(props) {
                         <ul className='cards'>
                             {products.slice(0, 5).map((prod) => (
                                 <li className='card' key={prod.id}>
-                                    <a href="">
+                                   <Link to={`/producto/${prod.id}`}>
                                         <div className='divcard'>
                                             <img style={{ height: "18rem" }} src={`../../../asset/${prod.img}`} alt="" />
                                             <h3>{prod.name}</h3>
@@ -136,7 +138,7 @@ function SecondHome(props) {
                                             <strong className="realPriceList">$ {cashPrice(prod.price)}</strong>
                                             <p className="arrivingList">Retiralo YA!</p>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </li>
                             ))
                             }

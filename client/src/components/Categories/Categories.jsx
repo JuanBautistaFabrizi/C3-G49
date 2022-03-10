@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Categories.css';
 
+import { Link } from "react-router-dom";
+
 function Categories() {
 const [products, setProducts] = useState([]);
     const [Images, setImages] = useState();
@@ -28,37 +30,37 @@ const [products, setProducts] = useState([]);
             <ol className='olcat'>
                 <li className='licat'>
                     <div className='divli'>
-                        <a className='acat' href=""><span className='catspan'>Tv, Audio y Video</span></a>
+                        <Link to={"./Tv"} className='acat' href=""><span className='catspan'>Tv, Audio y Video</span></Link>
                     </div>
                     
                 </li>
                 <li className='licat'>
                 <div className='divli'>
-                        <a className='acat' href=""><span className='catspan'>Celulares, Notebooks y Tecnología</span></a>
+                        <Link to={"./Celulares"} className='acat' href=""><span className='catspan'>Celulares, Notebooks y Tecnología</span></Link>
                     </div>
                     
                 </li>
                 <li className='licat'>
                 <div className='divli'>
-                        <a className='acat' href=""><span className='catspan'>Electrodomésticos y Aires Ac.</span></a> 
+                        <Link to="" className='acat' href=""><span className='catspan'>Electrodomésticos y Aires Ac.</span></Link> 
                     </div>
                     
                 </li>
                 <li className='licat'>
                 <div className='divli'>
-                        <a className='acat' href=""><span className='catspan'>Hogar, Muebles y Jardín</span></a> 
+                        <Link to="" className='acat' href=""><span className='catspan'>Hogar, Muebles y Jardín</span></Link> 
                     </div>
                     
                 </li>
                 <li className='licat'>
                 <div className='divli'>
-                        <a className='acat' href=""><span className='catspan'>Salud, Belleza y Fitness</span></a> 
+                        <Link to="" className='acat' href=""><span className='catspan'>Salud, Belleza y Fitness</span></Link> 
                     </div>
                     
                 </li>
                 <li className='licat'>
                 <div className='divli'>
-                        <a className='acat' href=""><span className='catspan'>Bebés y Niños</span></a> 
+                        <Link to="" className='acat' href=""><span className='catspan'>Bebés y Niños</span></Link> 
                     </div>
                     
                 </li>

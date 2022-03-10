@@ -6,9 +6,12 @@ import off4 from '../img/offabajo.jpg';
 import rollerm from '../img/rollermarket.png';
 import './fourthHome.css';
 
+import { Link } from "react-router-dom";
+
 function FourthHome() {
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
     const [Images, setImages] = useState();
+    const[categories, setCategories] = useState([]);
 
     const urlProducts = "http://127.0.0.1:8000/products";
 
@@ -86,12 +89,14 @@ function FourthHome() {
             <ul className='cards'>
             { products.slice(18,22).map((prod) => (
                         <li className='cardd' key={prod.id}>
+                            <Link to={`/producto/${prod.id}`}>
                             <div className='divcard'>
                                 <img src={`../../../asset/${prod.img}`} style={{ height: "200px" }} alt="" />
                                 <h3>{prod.name}</h3>
                                 <h5>$ {prod.price}</h5>
                                 <p className="arriving">Llega mañana</p>
                             </div>
+                            </Link>
                         </li>
                 ))
             }

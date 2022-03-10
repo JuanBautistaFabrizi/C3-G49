@@ -34,7 +34,10 @@ import './otherProducts.css'
                     <div className="allProducts">
                         {
                             products.map((prod) => (
+                                <>
                                 <ItemCard props={prod} key={prod.id} />
+                                <Link to={`/producto/${prod.id}`}></Link>
+                                </>
                             ))
                         }
                     

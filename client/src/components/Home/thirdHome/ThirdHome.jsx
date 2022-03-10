@@ -4,6 +4,8 @@ import envios2 from '../img/envios2.png';
 import telollevamos from '../img/telollevamos.png';
 import './thirdHome.css';
 
+import { Link } from "react-router-dom";
+
 function ThirdHome() {
     const [products, setProducts] = useState([]);
     const [Images, setImages] = useState();
@@ -83,7 +85,7 @@ function ThirdHome() {
                 <ul className='cards'>
                     {products.slice(8, 12).map((prod) => (
                         <li className='cardd' key={prod.id}>
-                            <a href="">
+                            <Link to={`/producto/${prod.id}`}>
                                 <div className='divcard'>
                                     <img style={{ height: "14rem" }} src={`../../../asset/${prod.img}`} alt="" />
                                     <h3>{prod.name}</h3>
@@ -94,7 +96,7 @@ function ThirdHome() {
                                     <strong className="realPriceList">$ {cashPrice(prod.price)}</strong>
                                     <p className="arrivingList">Retiralo YA!</p>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                     ))
                     }

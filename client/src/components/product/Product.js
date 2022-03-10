@@ -10,7 +10,7 @@ export default function Product(){
     return(
         <div className="productView">
             <ProductHero />
-           
+            
             
         </div>
     )

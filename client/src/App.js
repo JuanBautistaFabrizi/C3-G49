@@ -6,6 +6,8 @@ import Login from './components/login/Login';
 import ProductList from './components/productList/ProductList';
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
+import Tv from './components/productList/Tv';
+import Celulares from './components/productList/Celulares';
 
 import React, { useState, useEffect } from 'react';
 
@@ -33,6 +35,8 @@ function App(props) {
             <Route path="login" element={<Login />} />
             <Route path="/producto/:id" element={<Product />} />
             <Route path="/lista" element={<ProductList />} />
+            <Route path="/Tv" element={<Tv />} />
+            <Route path="/Celulares" element={<Celulares />} />
             {/* </Route> */}
           </Routes>
             <Footer />
