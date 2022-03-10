@@ -1,0 +1,115 @@
+.sliderarrow {
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+}
+
+.points {
+    position: absolute;
+    top: 0;
+}
+
+.points ul {
+    display: flex;
+    list-style: none; 
+}
+
+.arrows {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.ul {
+    margin: auto;
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: cambio 20s infinite alternate ease-in;
+}
+
+.li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    15% { margin-left: 0; }
+    
+    20% { margin-left: -100%; }
+    35% { margin-left: -100%; }
+
+    40% { margin-left: -200%; }
+    55% { margin-left: -200%; }
+
+    60% { margin-left: -300%; }
+    75% { margin-left: -300%; }
+
+    80% { margin-left: -400%; }
+    100% { margin-left: -400%; }
+}
+
+.metodosDePago {
+    grid-template-columns: max-content 32px max-content 32px max-content;
+    display: grid;
+    grid-auto-flow: column;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.metodosDePago a {
+    color: rgb(0, 106, 253);
+    text-decoration: none;
+}
+
+.paymentdiv {
+    padding: 8px 0px;
+    display: flex;
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.divtext {
+    display: flex;
+    gap: 4.5px;
+}
+
+.iconcontainer {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+.cardicon {
+    height: 28px;
+}
+
+.line {
+    width: 1px;
+    background-color: rgb(218, 218, 218);
+    height: 48px;
+    justify-self: center;
+}

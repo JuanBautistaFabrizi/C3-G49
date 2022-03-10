@@ -1,0 +1,256 @@
+svg{
+    background-color: rgb(241, 241, 241);
+}
+
+.headernav {
+    position: relative;
+    top: unset;
+    background-color: white;
+    z-index: 900;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* Primer Nav */
+
+.navPartOne {
+    font-size: 6px;
+    display: block;
+    background-color: rgb(241, 241, 241);
+    padding: 1px 15px;
+    z-index: 900;
+}
+
+.ulnav {
+    padding: 0px;
+    border: 0px;
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.liOne {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin-inline-end: 20px;
+    white-space: nowrap;
+    min-width: 0px;
+}
+
+.spanone {
+    font-size: 13px;
+    background-color: transparent;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    cursor: pointer;
+    color: rgb(74, 74, 74);
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 0px;
+}
+
+.secondspan { 
+    cursor: pointer;
+    color: rgb(74, 74, 74);
+    font-weight: 400;
+}
+
+.liTwo {
+    margin-inline-start: auto;
+    white-space: nowrap;
+    min-width: 0px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.imgcreditos {
+    height: 13px;
+    width: 125px;
+}
+
+/* Segundo Nav */
+
+.navPartTwo {
+    grid-template-columns: clamp(10em, 25%, 15em) 1fr auto auto;
+    gap: 0.5em 2em;
+    grid-template-areas:
+        "logo search extra user cart"
+        "geo search extra user cart";
+    padding: 1em;
+    display: grid;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+    z-index: 900;
+}
+
+.formnav {
+    display: contents;
+    margin-top: 0em;
+}
+
+.fieldsetnav {
+    grid-area: search;
+    width: clamp(10em, 100%, 40em);
+    margin: auto;
+    padding-inline-end: 1em;
+    padding: 0px;
+    border: 0px;
+    min-width: 0px;
+    max-width: 48em;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.search {
+    position: relative;
+    height: 44px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    z-index: 999;
+    border-radius: 4px;
+    border: 1px solid rgb(186, 30, 146);
+    /* border: 1px solid rgb(101, 75, 185); */
+}
+
+.inputnav {
+    font-size: 16px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    border: none;
+    letter-spacing: -0.5px;
+    color: rgb(74, 74, 74);
+    padding: 0.8em;
+    background-color: rgb(255, 255, 255);
+    min-width: 0px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.btnnav {
+    display: inline-block;
+    padding: 13px 15px;
+    cursor: pointer;
+    border: none;
+    /* violet: background-color: rgb(101, 75, 185); */
+    background-color: rgb(186, 30, 146);
+    display: inline-block;
+    color: white;
+    margin: 0px;
+}
+
+.navsvg {
+    height: 1.25em;
+    overflow: hidden;
+}
+
+.extra {
+    grid-area: extra;
+    display: flex;
+    flex-direction: row;
+}
+
+.user {
+    grid-area: user;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 9px;
+}
+
+.auser {
+    font-size: 14px;
+    color: #4a4a4a;
+    white-space: nowrap;
+}
+
+.divuser {
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.carrito {
+    grid-area: cart;
+    position: relative;
+}
+
+.btncarrito {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.2em;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    color: rgb(74, 74, 74);
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: "Work Sans", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Nav Parte Tres */
+
+.navPartThree {
+    grid-area: geo / geo / geo / geo;
+    position: relative;
+    z-index: 900;
+}
+
+.btncode {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 100%;
+    font-size: inherit;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.pcode {
+    margin-inline-start: 3px;
+    font-size: 0.875em;
+    font-family: "Work Sans", sans-serif;
+    display: flex;
+    white-space: nowrap;
+    flex: 1 1 auto;
+}
+
+b {
+    display: inline-block;
+    margin: 0px 0.3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Work Sans", sans-serif;
+    font-weight: inherit;
+    color: rgb(0, 106, 253);
+}

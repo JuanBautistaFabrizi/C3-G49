@@ -4,12 +4,13 @@ import Product from "../src/components/product/Product";
 import Form from './components/register/Form';
 import Login from './components/login/Login';
 import ProductList from './components/productList/ProductList';
+import NavBar from './components/NavBar/NavBar';
+import Home from './components/Home/Home';
 
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
+
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-
 
 function App(props) {
   const [products, setProducts] = useState([]);
@@ -24,8 +25,10 @@ function App(props) {
    
       <div className="App">
         <BrowserRouter>
+          <NavBar />
           <Routes>
           { /*<Route path="/" element={<Layout />}>*/}
+            <Route path="/" element={<Home />} />
             <Route path="register" element={<Form />} />            
             <Route path="login" element={<Login />} />
             <Route path="/producto/:id" element={<Product />} />
