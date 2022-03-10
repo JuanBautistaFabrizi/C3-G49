@@ -5,17 +5,32 @@ import creditos from './img/creditosFravega.png';
 
 const NavBar = () => {
     const [name, setName] = useState([])
+    const [search, setSearch] = useState([])
+    const [product, setProduct] = useState([])
 
     useEffect(() =>{
-        fetch(`https://api.mercadolibre.com/sites/MLA/search?q=${name}`)
+        fetch(`https://api.mercadolibre.com/sites/MLA/search?category=MLA1648&limit=5`)
         .then(response => response.json())
-        .then(respJSON => {console.log(respJSON.results); setName(respJSON.results)})
+        .then(respJSON => {
+            console.log(respJSON.results);
+            setProduct(respJSON.results);
+            setName(respJSON.results);
+        })
     },[])
 
-    function handleInputChange(e) {
+    function handleChange(e) {
         e.preventDefault();
-        setName(e.target.value);
-        console.log(name);
+        setSearch(e.target.value);
+        filtrado(e.target.value);
+    }
+
+    const filtrado = b => {
+
+        const result = name.filter(p => {
+            if(p.title.toString().toLowerCase().includes(b.toLowerCase())) return p;
+        })
+        console.log(result)
+        setProduct(result);
     }
 
   return (
@@ -104,7 +119,7 @@ const NavBar = () => {
             <form className='formnav'>
                 <fieldset className='fieldsetnav'>
                     <div className='search'>
-                        <input className='inputnav' onChange={e => handleInputChange(e)} type="text" placeholder="Buscar productos"/>
+                        <input className='inputnav' value={search} onChange={handleChange} type="text" placeholder="Buscar productos"/>
                         <button type='submit' className='btnnav'>
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-search" width="20" height="20" viewBox="0 0 20 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -146,18 +161,6 @@ const NavBar = () => {
                         </div>
                     </div>
         </div>
-
-        {/* <div className='navPartThree'>
-            <button className='btncode'>
-            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-map-pin" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4a4a4a" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="12" cy="11" r="3" />
-                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-            </svg>
-                <p className='pcode'>Estás en </p> <b>Capital Federal</b>
-            </button>
-            <div></div>
-        </div> */}
         <hr />
     </header>
   )
