@@ -68,7 +68,7 @@ ul, ol {
 }
 
 .olcat li a:hover {
-    background-color: rgba(29, 19, 116, 0.712);
+    color: rgba(192, 41, 159, 0.712);
 }
 
 .olcat > li {

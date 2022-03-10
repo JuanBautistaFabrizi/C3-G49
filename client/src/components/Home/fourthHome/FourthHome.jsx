@@ -15,6 +15,13 @@ function FourthHome() {
         .then(respJSON => {console.log(respJSON.results); setProducts(respJSON.results)})
     },[])
 
+    // 26%off
+    const offPrice = (price) => {
+        const descuento = Math.round(price * 26 / 100);
+        const result = price - descuento;
+        return result;
+    }
+
   return (
     <div>
         <div className='divOff center'>
@@ -70,11 +77,24 @@ function FourthHome() {
             <ul className='cards'>
             { products.map((prod) => (
                         <li className='cardd' key={prod.id}>
-                            <div className='divcard'>
-                                <img src={prod.thumbnail} style={{ height: "200px" }} alt="" />
-                                <h3>{prod.title}</h3>
-                                <h5>$ {prod.price}</h5>
-                            </div>
+                            <a href="">
+                                <div className='divcard'>
+                                    <img style={{ height: "210px" }} src={prod.thumbnail} alt="" />
+                                    <h3>{prod.title}</h3>
+                                    <div className='price'>
+                                        <div style={{ display: 'flex', justifyContent: "center"}}>
+                                            <span className='prodprice'>${prod.price}</span>
+                                            <span style={{ height: "0px", width: "4px"}}></span>
+                                            <span className='offprice'>26% OFF</span>
+                                        </div>
+                                        <span className='realprice'>${offPrice(prod.price)}</span>
+                                    </div>
+                                    <div style={{ display:"flex", justifyContent: "center", marginTop: "20px"}}>
+                                        <span className='llegaen'>Llega en 48hs</span>
+                                        <span className='llegaen'>¡Retiralo YA!</span>
+                                    </div>
+                                </div>
+                            </a>
                         </li>
                 ))
             }

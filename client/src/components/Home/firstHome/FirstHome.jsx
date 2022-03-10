@@ -39,50 +39,6 @@ function firstHome() {
                     </i>
                     </a>
                 </div>
-                <div className='points'>
-                    <ul>
-                        <li>
-                            <a href="#item1">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-point" width="24" height="24" viewBox="0 0 24 24" stroke-width="0.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <circle cx="12" cy="12" r="4" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#item2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-point" width="24" height="24" viewBox="0 0 24 24" stroke-width="0.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <circle cx="12" cy="12" r="4" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#item3">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-point" width="24" height="24" viewBox="0 0 24 24" stroke-width="0.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <circle cx="12" cy="12" r="4" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#item4">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-point" width="24" height="24" viewBox="0 0 24 24" stroke-width="0.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <circle cx="12" cy="12" r="4" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#item5">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-point" width="24" height="24" viewBox="0 0 24 24" stroke-width="0.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <circle cx="12" cy="12" r="4" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
         </div>
         </div>
         <div>

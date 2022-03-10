@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import televisores from '../img/televisores.png';
 import celulares from '../img/celulares.png';
 import airesyventilacion from '../img/airesyventilacion.png';
-import herrdejardin from '../img/herramientasdejardin.png';
 import heladeras from '../img/heladeras.png';
 import notebooks from '../img/notebooks.png';
 import './secondHome.css';
@@ -15,6 +14,13 @@ function SecondHome() {
         .then(response => response.json())
         .then(respJSON => {console.log(respJSON.results); setProducts(respJSON.results)})
     },[])
+
+    // 26%off
+    const offPrice = (price) => {
+        const descuento = Math.round(price * 26 / 100);
+        const result = price - descuento;
+        return result;
+    }
 
   return (
     <div>
@@ -92,7 +98,7 @@ function SecondHome() {
             <div className='cartelofertas'>
                 <span>OFERTAS POR TIEMPO LIMITADO</span>
             </div>
-            <div>
+            <div className='divdivcard'>
                 <ul className='cards'>
             { products.map((prod) => (
                         <li className='card' key={prod.id}>
@@ -100,7 +106,18 @@ function SecondHome() {
                                 <div className='divcard'>
                                     <img style={{ height: "200px" }} src={prod.thumbnail} alt="" />
                                     <h3>{prod.title}</h3>
-                                    <h5>$ {prod.price}</h5>
+                                    <div className='price'>
+                                        <div style={{ display: 'flex', justifyContent: "center"}}>
+                                            <span className='prodprice'>${prod.price}</span>
+                                            <span style={{ height: "0px", width: "4px"}}></span>
+                                            <span className='offprice'>26% OFF</span>
+                                        </div>
+                                        <span className='realprice'>${offPrice(prod.price)}</span>
+                                    </div>
+                                    <div style={{ display:"flex", justifyContent: "center"}}>
+                                        <span className='llegaen'>Llega en 48hs</span>
+                                        <span className='llegaen'>¡Retiralo YA!</span>
+                                    </div>
                                 </div>
                             </a>
                         </li>
