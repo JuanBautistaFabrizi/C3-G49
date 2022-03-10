@@ -10,8 +10,12 @@ export default function Product(){
     return(
         <div className="productView">
             <ProductHero />
-            <OtherProducts />
-            <ProductDescription />
+           
+            
         </div>
     )
 }
+
+/* <OtherProducts />
+<ProductDescription />
+*/

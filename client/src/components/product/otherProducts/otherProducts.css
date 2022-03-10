@@ -746,8 +746,8 @@
 
     .mainImgOther{
      
-        width: 15rem;
-        height: auto;
+        width: auto;
+        height: 20rem;
         margin-top: -1rem;
         margin-left: 2rem;
         z-index: 1;
@@ -775,7 +775,7 @@
         letter-spacing: -0.18px;
         padding: 0.5rem;
         text-decoration: none;
-        height: 10rem;
+        height: 8rem;
     }
 
     .discountPrice{

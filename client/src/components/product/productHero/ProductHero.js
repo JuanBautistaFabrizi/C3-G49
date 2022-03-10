@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
+
 
 import './productHero.css'
 import ahora12 from "../Images/ahora12.png"
@@ -13,20 +15,27 @@ import BuyButton from "./BuyButton";
 import './buyButton.css';
 
 const ProductHero = (props) => {
-    const [products, setProducts] = useState([]);
+    const {id} = useParams();
+    const [product, setProduct] = useState([]);
+    const [Images, setImages] = useState();
 
-    useEffect(() =>{
-        fetch('127.0.0.1:8000/products')
-        .then(response => response.json())
-        .then(respJSON => {console.log(respJSON.results); setProducts(respJSON.results)})
-    },[])
+    const urlProducts = `http://127.0.0.1:8000/products/${id}`;
 
-   /* useEffect(() =>{
-        fetch('https://api.mercadolibre.com/sites/MLA/search?category=MLA1648&limit=10')
-        .then(response => response.json())
-        .then(respJSON => {console.log(respJSON.results); setProducts(respJSON.results)})
-    },[]);*/
-    
+    const fetchData = async (url) => {
+        try {
+            const res = await fetch(urlProducts);
+            const data = await res.json();
+
+            setProduct(data);
+            setImages(data.img);
+            
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
+    fetchData();
+
     function cashPrice (totalPrice) {
         return Math.round(totalPrice - 0.24 *totalPrice);
     }
@@ -52,15 +61,15 @@ const ProductHero = (props) => {
             </div>
             <div className="rightColumn">
                 <div className="heroTitle">
-                    <h2 className="productBrand">{props.brand}</h2>
-                    <h1 className="productNameHero">{props.title}</h1>
+                    <h2 className="productBrand">{product.brand}</h2>
+                    <h1 className="productNameHero">{product.name}</h1>
                     <div className="pricesWrapped">
                         <div className="creditPrice">
-                            <div><h3 id="creditHero" className="creditHero">{props.price}</h3></div> 
+                            <div><h3 id="creditHero" className="creditHero">$ {product.price}</h3></div> 
                             <div><span className="discountHero">24% OFF</span></div>
                             
                         </div>
-                        <h3 className="cashPrice">$ {cashPrice(50000)}</h3>
+                        <h3 className="cashPrice">$ {cashPrice(product.price)}</h3>
                     </div>
                 </div>
                 <div className="payBank">
@@ -73,7 +82,7 @@ const ProductHero = (props) => {
                                 title="Pagá en 24 cuotas">
                             </img>
                             <div className="paymentInfo">
-                                <p><strong>Ahora 24</strong> cuotas fijas de $ {twentyfour(50000)} </p>
+                                <p><strong>Ahora 24</strong> cuotas fijas de $ {twentyfour(product.price)} </p>
                                 
                             </div>
                         </div>
@@ -84,7 +93,7 @@ const ProductHero = (props) => {
                                 title="Pagá en 18 cuotas">
                             </img>
                             <div className="paymentInfo">
-                                <p><strong>Ahora 18</strong> cuotas fijas de $ {eighteen(50000)}</p>
+                                <p><strong>Ahora 18</strong> cuotas fijas de $ {eighteen(product.price)}</p>
                                 
                                 </div>
                         </div>
@@ -95,7 +104,7 @@ const ProductHero = (props) => {
                                 title="Pagá en 12 cuotas">
                             </img>
                             <div className="paymentInfo">
-                                <p><strong>Ahora 12</strong> cuotas fijas de $ {twelve(50000)}</p>
+                                <p><strong>Ahora 12</strong> cuotas fijas de $ {twelve(product.price)}</p>
                               
                             </div>
                         </div>

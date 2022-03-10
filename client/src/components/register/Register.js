@@ -8,6 +8,10 @@ export default function Register({ submitForm }){
     name: "",
     email: "",
     password: "",
+    address: "",
+    phone: "",
+    status: "",
+    role: "",
   });
 
   const [errors, setErrors] = useState({});
