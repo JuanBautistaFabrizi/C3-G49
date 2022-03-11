@@ -5,7 +5,7 @@ import ItemsCard from './ItemsCard';
 
 import './productList.css'
 
-const Celulares = () => {
+const Electro = () => {
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
@@ -56,7 +56,7 @@ const Celulares = () => {
             </div>
             <div className="listContainer">
                 {
-                    data.slice(11, 15).map((prod) => (
+                    data.slice(18, 22).map((prod) => (
                         <ItemsCard props={prod} key={prod.id} />
                     ))
                 }
@@ -66,4 +66,4 @@ const Celulares = () => {
 
     )
 }
-export default Celulares;
+export default Electro;

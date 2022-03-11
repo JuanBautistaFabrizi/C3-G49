@@ -6,15 +6,19 @@ import herramientasdejardin from '../img/herramientasdejardin.png';
 import bebesCochecito from '../img/bebesCochecito.jpg';
 import saludPesas from '../img/saludPesas.jpg';
 
+import Tv from '../../productList/Tv';
 import { Link } from "react-router-dom";
 
 import './secondHome.css';
 
+
 function SecondHome(props) {
     const [products, setProducts] = useState([]);
+    const [categories, setCategories] = useState([]);
     const [Images, setImages] = useState();
 
     const urlProducts = "http://127.0.0.1:8000/products";
+    const urlCategories = "http://127.0.0.1:8000/categories";
 
     const fetchData = async (url) => {
         try {
@@ -31,8 +35,32 @@ function SecondHome(props) {
 
     fetchData();
 
+    const fetchData2 = async (url) => {
+        try {
+            const res2 = await fetch(urlCategories);
+            const data2 = await res2.json();
+
+            setCategories(data2);
+
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
+    fetchData2();
+    console.log(categories);
+
     function cashPrice (totalPrice) {
         return Math.round(totalPrice - 0.24 *totalPrice);
+    }
+
+    const openCat = () => {
+        return(
+            <>
+            
+        </>
+        )
+        
     }
 
     return (
@@ -43,14 +71,14 @@ function SecondHome(props) {
                         <ul className='ulcategories'>
                             <li>
                                 <div className='licategories'>
-                                    <a href="">
+                                    
                                         <figure>
                                             <picture>
                                                 <img className='img' src={televisores} style={{ height: '150px' }} alt="categoria" />
                                             </picture>
                                         </figure>
                                         <span>TV, Audio y Video</span>
-                                    </a>
+                                    
                                 </div>
                             </li>
                             <li>
@@ -129,13 +157,13 @@ function SecondHome(props) {
                                 <li className='card' key={prod.id}>
                                    <Link to={`/producto/${prod.id}`}>
                                         <div className='divcard'>
-                                            <img style={{ height: "18rem" }} src={`../../../asset/${prod.img}`} alt="" />
+                                            <img style={{ height: "14rem" }} src={`../../../asset/${prod.img}`} alt="" />
                                             <h3>{prod.name}</h3>
                                             <div className="discountPriceList">
-                                                <div><h3 className="creditLists">$ {prod.price}</h3></div>
+                                                <div><h4 className="creditLists">$ {prod.price}</h4></div>
                                                 <div><span className="discountList">24% OFF</span></div>
                                             </div>
-                                            <strong className="realPriceList">$ {cashPrice(prod.price)}</strong>
+                                            <strong className="realPriceHome">$ {cashPrice(prod.price)}</strong>
                                             <p className="arrivingList">Retiralo YA!</p>
                                         </div>
                                     </Link>

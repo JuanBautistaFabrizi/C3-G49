@@ -38,14 +38,14 @@ function ThirdHome() {
                     <figure>
                         <picture>
                             <source />
-                            <img src={envios2} alt="promocion" style={{ heigth: '254px', width: '238px' }} />
+                            <img src={envios2} alt="promocion"/>
                         </picture>
                     </figure>
                     <div>
                         <header>
                             <picture>
                                 <source />
-                                <img style={{ height: "32px", width: "100px" }} src={telollevamos} alt="logo de promocion" />
+                                <img src={telollevamos} style={{ height: "32px", width: "100px", marginBottom: "13px" }} alt="logo de promocion" />
                             </picture>
                         </header>
                         <div>
@@ -60,7 +60,7 @@ function ThirdHome() {
                         <picture>
                             <picture>
                                 <source />
-                                <img src={envios} alt="promocion" style={{ heigth: '254px', width: '238px' }} />
+                                <img src={envios} alt="promocion"/>
                             </picture>
                         </picture>
                     </figure>
@@ -90,10 +90,10 @@ function ThirdHome() {
                                     <img style={{ height: "14rem" }} src={`../../../asset/${prod.img}`} alt="" />
                                     <h3>{prod.name}</h3>
                                     <div className="discountPriceList">
-                                        <div><h3 className="creditLists">$ {prod.price}</h3></div>
+                                        <div><h4 className="creditLists">$ {prod.price}</h4 ></div>
                                         <div><span className="discountList">24% OFF</span></div>
                                     </div>
-                                    <strong className="realPriceList">$ {cashPrice(prod.price)}</strong>
+                                    <strong className="realPriceHome">$ {cashPrice(prod.price)}</strong>
                                     <p className="arrivingList">Retiralo YA!</p>
                                 </div>
                             </Link>

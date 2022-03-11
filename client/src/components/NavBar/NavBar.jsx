@@ -3,7 +3,7 @@ import './NavBar.css';
 import logo from './img/logo.png';
 import creditos from './img/creditosFravega.png';
 
-import Categories from '../Categories/Categories';
+import Categories from './Categories/Categories';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -175,7 +175,7 @@ const NavBar = () => {
             <div></div>
         </div> */}
         <hr />
-        <Categories/>
+   
     </header>
     
   )

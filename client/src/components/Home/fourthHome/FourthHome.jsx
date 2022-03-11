@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 function FourthHome() {
     const [products, setProducts] = useState([]);
     const [Images, setImages] = useState();
-    const[categories, setCategories] = useState([]);
+  
 
     const urlProducts = "http://127.0.0.1:8000/products";
 

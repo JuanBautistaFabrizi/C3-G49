@@ -104,15 +104,14 @@ function firstHome() {
                                 <img src={paymentMethods2} style={{height:'34px'}} alt="icon moneda" />
                             </div>
                         </div>
-                        <div>
+                        <div className='textosNav'>
                             <div className='divtext'>
                                 <p style={{ margin: "0"}}>Frávega Créditos.</p>
                                 <a href="">Pagá Online.</a>
                             </div>
                             <div className='divtext'>
                                 <a href="">Conocé más</a>
-                                <p style={{ margin: "0"}}>y accedé al</p>
-                                <a href="">catálogo exclusivo.</a>
+                                
                             </div>
                         </div>
                     </div>

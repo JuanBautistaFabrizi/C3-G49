@@ -2,6 +2,16 @@
     background-color: rgb(241, 241, 241);
 }
 
+.realPriceHome{
+    font-size: 2.2rem;
+    margin-top: 4rem;
+    font-weight: 600;
+    line-height: 2;
+    letter-spacing: -0.32px;
+    color: black;
+}
+
+
 .categories {
     padding-top: 60px;
 }

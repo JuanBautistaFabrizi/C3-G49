@@ -67,12 +67,11 @@
 }
 
 .metodosDePago {
-    grid-template-columns: max-content 32px max-content 32px max-content;
-    display: grid;
-    grid-auto-flow: column;
+   
+    display: flex;
     -webkit-box-align: center;
     align-items: center;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -92,18 +91,31 @@
     grid-auto-flow: column;
     -webkit-box-align: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
+}
+
+.textosNav{
+    display: flex;
+    gap: 1rem;
 }
 
 .divtext {
     display: flex;
-    gap: 4.5px;
+    gap: 0.4rem;
+
+    gap: 1rem;
 }
 
 .iconcontainer {
     display: flex;
+    gap: 1rem;
     -webkit-box-pack: end;
     justify-content: flex-end;
+}
+
+.iconcontainer img{
+    width: 8rem;
+    height: auto;
 }
 
 .cardicon {
@@ -113,6 +125,6 @@
 .line {
     width: 1px;
     background-color: rgb(218, 218, 218);
-    height: 48px;
+    height: 5rem;
     justify-self: center;
 }
