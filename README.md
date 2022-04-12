@@ -32,5 +32,5 @@ Ingresar a la ruta de la api.
 * **Juan Bautista Fabrizi** - *Backend* - 
 * **Alejandro Telmo** - *Backend* - 
 * **Nicolás Bonder** - *Frontend* - 
-* **Daniela Escudero** - *Frontend* - 
-* **Cecilia Cuello** - *Frontend* - 
+* **Cecilia Cuello** - *Frontend* -  
+
